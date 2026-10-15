@@ -5,7 +5,7 @@ import atl from "../assets/Atl.png";
 import calli from "../assets/Calli.png";
 import cipactli from "../assets/Cipactli.png";
 import coatl from "../assets/Coatl.png";
-import cuauhtli from "../assets/Cuauhtli.png";
+import cozcacuauhtli from "../assets/Cozcacuauhtli.png";
 import cuetzpalin from "../assets/Cuetzpalin.png";
 import ehecatl from "../assets/Ehecatl.png";
 import itzcuintli from "../assets/Itzcuintli.png";
@@ -26,7 +26,7 @@ const SIGN_GLYPHS: Record<string, StaticImageData> = {
   Calli: calli,
   Cipactli: cipactli,
   Coatl: coatl,
-  Cuauhtli: cuauhtli,
+  Cozcacuauhtli: cozcacuauhtli,
   Cuetzpalin: cuetzpalin,
   Ehecatl: ehecatl,
   Itzcuintli: itzcuintli,
