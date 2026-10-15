@@ -17,6 +17,8 @@ htmlcov/
 
 # Future frontend tooling
 node_modules/
+frontend/.next/
+frontend/*.tsbuildinfo
 frontend/dist/
 frontend/build/
 

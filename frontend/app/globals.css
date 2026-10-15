@@ -1,0 +1,362 @@
+:root {
+  color-scheme: dark;
+  --color-white: #fff;
+  --color-muted: rgb(255 255 255 / 78%);
+  --color-soft: rgb(255 255 255 / 58%);
+  --calendar-title-size: clamp(1.15rem, 1.75vw, 1.55rem);
+  --calendar-field-gap: clamp(0.5rem, 1.2vw, 1rem);
+  --hero-gap: clamp(1rem, 3vh, 1.75rem);
+  --hero-glyph-width: clamp(14rem, 28vw, min(25rem, 40vh));
+  --hero-dot-size: clamp(0.7rem, 1.4vw, 1.1rem);
+  --emblem-gap: clamp(1rem, 2.2vw, 1.75rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #000;
+  color: var(--color-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.calendar-screen {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+  place-items: center;
+  overflow-x: hidden;
+  background:
+    linear-gradient(
+      180deg,
+      #000 0%,
+      #000 57%,
+      #190204 63%,
+      #7d1117 75%,
+      #f52d33 91%,
+      #ff8789 100%
+    );
+}
+
+/* Kept outside the composition so the preview controls can be removed independently. */
+.date-navigator {
+  position: absolute;
+  z-index: 2;
+  top: clamp(1rem, 3vh, 2rem);
+  right: clamp(1rem, 3vw, 2.25rem);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.date-navigator button {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 30%);
+  border-radius: 50%;
+  background: rgb(255 255 255 / 6%);
+  color: var(--color-white);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.date-navigator input {
+  width: 9rem;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid rgb(255 255 255 / 30%);
+  border-radius: 0.5rem;
+  background: rgb(255 255 255 / 6%);
+  color: var(--color-white);
+  font-size: 0.78rem;
+}
+
+.date-navigator button:focus-visible,
+.date-navigator input:focus-visible,
+.calendar-message button:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 3px;
+}
+
+.calendar-content {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  width: min(100%, 75rem);
+  place-items: center;
+  margin-inline: auto;
+  padding: 4.5rem 1.5rem 2rem;
+  text-align: center;
+}
+
+.calendar-composition {
+  display: flex;
+  width: min(100%, 58rem);
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--calendar-field-gap);
+  margin-bottom: var(--hero-gap);
+  font-size: var(--calendar-title-size);
+  font-weight: 750;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.day-sign {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-sign__emblem {
+  position: relative;
+  display: grid;
+  width: var(--hero-glyph-width);
+  max-width: 100%;
+  place-items: center;
+  padding-block: clamp(1rem, 2.5vh, 1.5rem);
+}
+
+.sign-glyph-frame {
+  position: relative;
+  display: grid;
+  flex: none;
+  place-items: center;
+}
+
+.sign-glyph-frame--hero {
+  width: var(--hero-glyph-width);
+  max-width: 100%;
+  aspect-ratio: 3806 / 2400;
+}
+
+.day-sign__emblem > .dot-count {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + var(--emblem-gap));
+  transform: translateY(-50%);
+}
+
+.sign-glyph-frame--small {
+  width: clamp(4.4rem, 7vw, 6rem);
+  aspect-ratio: 3806 / 2400;
+}
+
+.sign-glyph {
+  display: block;
+  object-fit: contain;
+}
+
+.glyph-placeholder {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  border: 1px dashed rgb(255 255 255 / 45%);
+  border-radius: 50%;
+  color: var(--color-soft);
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.dot-count {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--hero-dot-size);
+  grid-template-rows: repeat(5, var(--hero-dot-size));
+  align-content: center;
+  justify-content: end;
+  gap: clamp(0.35rem, 0.8vw, 0.65rem);
+  direction: rtl;
+}
+
+.dot-count__dot {
+  width: var(--hero-dot-size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-white);
+}
+
+.dot-count--small {
+  grid-auto-columns: 0.42rem;
+  grid-template-rows: 0.42rem;
+  gap: 0.18rem;
+  direction: ltr;
+}
+
+.dot-count--small .dot-count__dot {
+  width: 0.42rem;
+}
+
+.day-sign__identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: var(--hero-gap);
+}
+
+.day-sign__name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: var(--calendar-field-gap);
+  row-gap: 0;
+  margin: 0;
+  font-size: var(--calendar-title-size);
+  font-weight: 750;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.day-sign__translation {
+  display: flex;
+  justify-content: center;
+  gap: var(--calendar-field-gap);
+  margin: 0;
+  color: var(--color-muted);
+  font-size: clamp(0.78rem, 1vw, 0.92rem);
+  font-style: italic;
+}
+
+.period-panels {
+  display: grid;
+  width: min(100%, 40rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 8vw, 6rem);
+  margin-top: clamp(2rem, 5.5vh, 3.5rem);
+  text-align: left;
+}
+
+.period-panel {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.period-panel__copy {
+  min-width: 0;
+}
+
+.period-panel h2 {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+  font-weight: 750;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.period-panel p {
+  margin: 0.25rem 0 0;
+  color: var(--color-muted);
+  font-size: clamp(0.72rem, 0.95vw, 0.82rem);
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.xihuitl-panel__glyph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.calendar-loading {
+  display: flex;
+  min-height: 55vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.calendar-loading__label,
+.calendar-message p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.calendar-message {
+  max-width: 30rem;
+}
+
+.calendar-message button {
+  min-height: 2.75rem;
+  margin-top: 0.5rem;
+  padding: 0.65rem 1.2rem;
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --hero-glyph-width: min(60vw, 20rem);
+    --hero-dot-size: clamp(0.65rem, 3.6vw, 0.9rem);
+    --emblem-gap: 0.7rem;
+  }
+
+  .calendar-content {
+    padding: 4.5rem 1rem 2rem;
+  }
+
+  .date-navigator {
+    top: 1rem;
+    right: 1rem;
+    gap: 0.35rem;
+  }
+
+  .date-navigator button {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .date-navigator input {
+    width: 8.4rem;
+    font-size: 0.7rem;
+  }
+
+  .dot-count {
+    gap: 0.35rem;
+  }
+
+  .period-panels {
+    width: min(100%, 24rem);
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .period-panel {
+    min-height: 5.5rem;
+  }
+}
