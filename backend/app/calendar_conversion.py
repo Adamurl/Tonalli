@@ -74,6 +74,14 @@ def calculate_tonalpohualli(jdn: int) -> dict:
     return {"number": number, "sign": sign["nahuatl"], "english": sign["english"]}
 
 
+def calculate_trecena(jdn: int) -> dict:
+    """Return the day sign that names the current 13-day period."""
+    delta = jdn - ANCHOR_JDN
+    trecena_start_delta = delta - (delta % 13)
+    sign = DAY_SIGNS[(4 + trecena_start_delta) % 20]
+    return {"sign": sign["nahuatl"], "english": sign["english"]}
+
+
 def calculate_xiuhpohualli(jdn: int) -> dict:
     delta = jdn - ANCHOR_JDN
     solar_position = (delta + 201) % 365
