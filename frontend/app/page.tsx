@@ -49,15 +49,20 @@ export default function Home() {
   const [requestCount, setRequestCount] = useState(0);
 
   useEffect(() => {
-    const requestedDate = date ?? localDateString(new Date());
+    if (!date) {
+      setDate(localDateString(new Date()));
+      return;
+    }
+
+    const requestedDate = date;
     const controller = new AbortController();
 
     setCalendar(null);
     setError(null);
-    if (!date) setDate(requestedDate);
-
     getCalendarDate(requestedDate, controller.signal)
-      .then(setCalendar)
+      .then((result) => {
+        if (!controller.signal.aborted) setCalendar(result);
+      })
       .catch((reason: unknown) => {
         if (controller.signal.aborted) return;
         setError(

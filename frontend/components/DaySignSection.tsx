@@ -11,7 +11,11 @@ export function DaySignSection({ sign }: { sign: TonalpohualliDate }) {
         <SignGlyph sign={sign.sign} size="hero" />
       </div>
       <div className="day-sign__identity">
-        <h1 id="day-sign-name" className="day-sign__name">
+        <h1
+          id="day-sign-name"
+          className="day-sign__name"
+          aria-label={numberName ? `${numberName} ${sign.sign}` : sign.sign}
+        >
           {numberName && <span>{numberName}</span>}
           <span>{sign.sign}</span>
         </h1>

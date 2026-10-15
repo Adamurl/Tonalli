@@ -81,7 +81,7 @@ export function SiteHeader() {
           <nav
             className={styles.mobileNavigation}
             id="mobile-navigation"
-            aria-label="Main navigation"
+            aria-label="Mobile navigation"
           >
             <ul className={styles.mobileNavigationList}>
               {navigationItems.map((item) => (
