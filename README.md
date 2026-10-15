@@ -5,7 +5,11 @@ corresponding Mexica calendar information using the Alfonso Caso correlation.
 
 ## Project layout
 
-- `backend/app/` contains the FastAPI app and calendar conversion logic.
+- `backend/app/api/routes/` contains the HTTP endpoints.
+- `backend/app/services/` contains application behavior.
+- `backend/app/repositories/` reads reference data from Supabase.
+- `backend/app/schemas/` defines typed Pydantic API responses.
+- `backend/app/calendar_conversion.py` contains calendar conversion logic.
 - `backend/requirements.txt` lists the backend dependencies.
 - `frontend/` is reserved for the future frontend.
 

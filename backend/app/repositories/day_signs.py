@@ -7,7 +7,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from supabase import Client, create_client
 
-load_dotenv(Path(__file__).resolve().parents[1] / ".env")
+load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 
 TABLE = "day_signs"
 BASE_COLUMNS = "name,english,position"
@@ -24,7 +24,7 @@ DETAIL_FIELDS = (
 DETAIL_COLUMNS = f"{BASE_COLUMNS},{','.join(DETAIL_FIELDS)}"
 
 
-class DaySignStoreError(RuntimeError):
+class DaySignRepositoryError(RuntimeError):
     """Raised when day sign data cannot be read from Supabase."""
 
 
@@ -33,21 +33,21 @@ def _client() -> Client:
     url = os.getenv("SUPABASE_URL")
     key = os.getenv("SUPABASE_PUBLISHABLE_KEY")
     if not url or not key:
-        raise DaySignStoreError("Supabase is not configured")
+        raise DaySignRepositoryError("Supabase is not configured")
     try:
         return create_client(url, key)
     except Exception as exc:
-        raise DaySignStoreError("Could not initialize Supabase") from exc
+        raise DaySignRepositoryError("Could not initialize Supabase") from exc
 
 
 def list_day_signs() -> list[dict]:
     try:
         response = _client().table(TABLE).select(BASE_COLUMNS).order("position").execute()
         return response.data
-    except DaySignStoreError:
+    except DaySignRepositoryError:
         raise
     except Exception as exc:
-        raise DaySignStoreError("Could not read day signs from Supabase") from exc
+        raise DaySignRepositoryError("Could not read day signs from Supabase") from exc
 
 
 def get_day_sign(name: str, *, include_sections: bool = False) -> dict | None:
@@ -62,7 +62,7 @@ def get_day_sign(name: str, *, include_sections: bool = False) -> dict | None:
             .execute()
         )
         return response.data[0] if response.data else None
-    except DaySignStoreError:
+    except DaySignRepositoryError:
         raise
     except Exception as exc:
-        raise DaySignStoreError("Could not read day sign from Supabase") from exc
+        raise DaySignRepositoryError("Could not read day sign from Supabase") from exc
