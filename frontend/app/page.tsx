@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import { DateNavigator } from "../components/DateNavigator";
 import { DaySignSection } from "../components/DaySignSection";
+import { SiteHeader } from "../components/SiteHeader";
 import { SignGlyph } from "../components/SignGlyph";
 import { TrecenaPanel } from "../components/TrecenaPanel";
 import { XihuitlPanel } from "../components/XihuitlPanel";
@@ -74,31 +75,35 @@ export default function Home() {
   }
 
   return (
-    <main className="calendar-screen" aria-busy={!calendar && !error}>
-      {date && (
-        <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
-      )}
-      <div className="calendar-content">
-        {calendar && date ? (
-          <CalendarComposition data={calendar} date={date} />
-        ) : (
-          <section className="calendar-loading" aria-live="polite">
-            <SignGlyph size="hero" />
-            {error ? (
-              <div className="calendar-message" role="alert">
-                <p>{error}</p>
-                <button type="button" onClick={() => setRequestCount((value) => value + 1)}>
-                  Try again
-                </button>
-              </div>
-            ) : (
-              <p className="calendar-loading__label" role="status">
-                Reading today’s calendar…
-              </p>
-            )}
-          </section>
+    <main className="tonalli-page">
+      <SiteHeader />
+      <section className="calendar-screen" aria-busy={!calendar && !error}>
+        {date && (
+          <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
         )}
-      </div>
+        <div className="calendar-content">
+          {calendar && date ? (
+            <CalendarComposition data={calendar} date={date} />
+          ) : (
+            <section className="calendar-loading" aria-live="polite">
+              <SignGlyph size="hero" />
+              {error ? (
+                <div className="calendar-message" role="alert">
+                  <p>{error}</p>
+                  <button type="button" onClick={() => setRequestCount((value) => value + 1)}>
+                    Try again
+                  </button>
+                </div>
+              ) : (
+                <p className="calendar-loading__label" role="status">
+                  Reading today’s calendar…
+                </p>
+              )}
+            </section>
+          )}
+        </div>
+      </section>
+      <section className="scroll-test-section" aria-label="Scroll test area" />
     </main>
   );
 }

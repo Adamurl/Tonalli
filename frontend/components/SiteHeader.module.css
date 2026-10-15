@@ -1,0 +1,210 @@
+.header {
+  position: sticky;
+  z-index: 5;
+  top: 0.625rem;
+  display: grid;
+  width: 100%;
+  height: 4.375rem;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0.625rem clamp(1.25rem, 3.5vw, 3.125rem);
+}
+
+.brand {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-items: start;
+  color: inherit;
+}
+
+.logo {
+  width: 2.6rem;
+  height: 2.6rem;
+  object-fit: contain;
+}
+
+.desktopNavigation {
+  display: flex;
+  min-height: 3.125rem;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.1rem, 2vw, 2rem);
+  padding-inline: clamp(1.5rem, 3vw, 2.75rem);
+  border-radius: 0.9rem;
+  background: rgb(255 255 255 / 7%);
+  box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 20%);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.navigationItem {
+  color: rgb(255 255 255 / 92%);
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.downloadButton,
+.mobileDownloadButton {
+  min-width: 8.5rem;
+  min-height: 3.125rem;
+  justify-self: end;
+  padding: 0.65rem 1.5rem;
+  border: 0;
+  border-radius: 0.9rem;
+  background: #fff;
+  color: #080808;
+  font-size: 0.95rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.downloadButton:hover,
+.mobileDownloadButton:hover {
+  transform: translateY(-1px);
+  background: #e9e9e9;
+}
+
+.menuButton {
+  display: none;
+}
+
+.header :is(a, button):focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.menuLayer {
+  position: absolute;
+  inset: 100% 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 clamp(1rem, 3.5vw, 3.125rem);
+}
+
+.mobileNavigation {
+  width: min(100%, 56rem);
+  max-height: calc(100svh - 5.5rem);
+  overflow-y: auto;
+  border-radius: 0 0 1.25rem 1.25rem;
+  background: rgb(18 18 18 / 96%);
+  box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 38%);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  transform-origin: top center;
+  animation: menu-appear 180ms ease-out both;
+}
+
+.mobileNavigationList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobileNavigationItem {
+  display: flex;
+  min-height: 3.125rem;
+  align-items: center;
+  padding: 0.65rem clamp(1.25rem, 3vw, 2.25rem);
+  border-bottom: 1px solid rgb(255 255 255 / 7%);
+  color: #f5f5f5;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.mobileNavigationFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.9rem clamp(1.25rem, 3vw, 2.25rem);
+}
+
+.mobileDownloadButton {
+  min-width: 7rem;
+  min-height: 3.125rem;
+  border-radius: 0.8rem;
+}
+
+@keyframes menu-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-0.4rem) scaleY(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: 1fr auto 1fr;
+    padding-inline: 1rem;
+  }
+
+  .brand {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .logo {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .desktopNavigation,
+  .downloadButton {
+    display: none;
+  }
+
+  .menuButton {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    min-width: 6rem;
+    min-height: 3.125rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.5rem 1rem;
+    transform: translateX(-50%);
+    border: 0;
+    border-radius: 0 0 0.8rem 0.8rem;
+    background: rgb(255 255 255 / 7%);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+  }
+
+  .menuIcon {
+    display: grid;
+    grid-template-columns: repeat(2, 0.38rem);
+    gap: 0.16rem;
+  }
+
+  .menuIcon span {
+    width: 0.38rem;
+    aspect-ratio: 1;
+    border-radius: 0.08rem;
+    background: currentColor;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobileNavigation {
+    animation: none;
+  }
+
+  .downloadButton,
+  .mobileDownloadButton {
+    transition: none;
+  }
+}
