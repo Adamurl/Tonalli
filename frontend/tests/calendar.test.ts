@@ -13,9 +13,9 @@ describe("calendar utilities", () => {
   it("formats local dates without shifting the calendar day", () => {
     expect(localDateString(new Date(2026, 2, 9, 12))).toBe("2026-03-09");
     expect(formatDisplayDate("2026-03-09")).toEqual({
-      month: "March",
-      day: "9",
-      year: "2026",
+      month: "03",
+      day: "09",
+      year: "26",
     });
   });
 

@@ -1,4 +1,5 @@
 import { SignGlyph } from "./SignGlyph";
+import { GlyphHoverLabel } from "./GlyphHoverLabel";
 
 export function TrecenaPanel({
   sign,
@@ -11,7 +12,9 @@ export function TrecenaPanel({
         <h2>Trecena</h2>
         <p>13-Day Period</p>
       </div>
-      <SignGlyph sign={sign.sign} size="small" />
+      <GlyphHoverLabel name={sign.sign}>
+        <SignGlyph sign={sign.sign} size="small" />
+      </GlyphHoverLabel>
     </section>
   );
 }

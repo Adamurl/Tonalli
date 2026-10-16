@@ -1,5 +1,6 @@
 import { DotCount } from "./DotCount";
 import { SignGlyph } from "./SignGlyph";
+import { GlyphHoverLabel } from "./GlyphHoverLabel";
 
 export function XihuitlPanel({
   sign,
@@ -13,7 +14,9 @@ export function XihuitlPanel({
         <p>Solar Year</p>
       </div>
       <div className="xihuitl-panel__glyph">
-        <SignGlyph sign={sign.sign} size="small" />
+        <GlyphHoverLabel name={sign.sign}>
+          <SignGlyph sign={sign.sign} size="small" />
+        </GlyphHoverLabel>
         <DotCount count={sign.number} small />
       </div>
     </section>

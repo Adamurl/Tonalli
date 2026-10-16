@@ -20,8 +20,7 @@ export function DaySignSection({ sign }: { sign: TonalpohualliDate }) {
           <span>{sign.sign}</span>
         </h1>
         <p className="day-sign__translation">
-          <span>{sign.number}</span>
-          <span>{sign.english}</span>
+          {sign.number} {sign.english}
         </p>
       </div>
     </section>

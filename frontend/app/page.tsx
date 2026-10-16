@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+import { CalendarAmbientBackground } from "../components/CalendarAmbientBackground";
 import { DateNavigator } from "../components/DateNavigator";
 import { DaySignSection } from "../components/DaySignSection";
 import { SiteHeader } from "../components/SiteHeader";
@@ -43,17 +44,12 @@ function CalendarComposition({
 }
 
 export default function Home() {
-  const [date, setDate] = useState<string | null>(null);
+  const [date, setDate] = useState("2026-10-15");
   const [calendar, setCalendar] = useState<CalendarDate | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [requestCount, setRequestCount] = useState(0);
 
   useEffect(() => {
-    if (!date) {
-      setDate(localDateString(new Date()));
-      return;
-    }
-
     const requestedDate = date;
     const controller = new AbortController();
 
@@ -82,33 +78,36 @@ export default function Home() {
   return (
     <main className="tonalli-page">
       <SiteHeader />
-      <section className="calendar-screen" aria-busy={!calendar && !error}>
-        {date && (
-          <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
-        )}
-        <div className="calendar-content">
-          {calendar && date ? (
-            <CalendarComposition data={calendar} date={date} />
-          ) : (
-            <section className="calendar-loading" aria-live="polite">
-              <SignGlyph size="hero" />
-              {error ? (
-                <div className="calendar-message" role="alert">
-                  <p>{error}</p>
-                  <button type="button" onClick={() => setRequestCount((value) => value + 1)}>
-                    Try again
-                  </button>
-                </div>
-              ) : (
-                <p className="calendar-loading__label" role="status">
-                  Reading today’s calendar…
-                </p>
-              )}
-            </section>
+      <div className="calendar-scroll-stage">
+        <section className="calendar-screen" aria-busy={!calendar && !error}>
+          <CalendarAmbientBackground />
+          {date && (
+            <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
           )}
-        </div>
-      </section>
-      <section className="scroll-test-section" aria-label="Scroll test area" />
+          <div className="calendar-content">
+            {calendar && date ? (
+              <CalendarComposition data={calendar} date={date} />
+            ) : (
+              <section className="calendar-loading" aria-live="polite">
+                <SignGlyph size="hero" />
+                {error ? (
+                  <div className="calendar-message" role="alert">
+                    <p>{error}</p>
+                    <button type="button" onClick={() => setRequestCount((value) => value + 1)}>
+                      Try again
+                    </button>
+                  </div>
+                ) : (
+                  <p className="calendar-loading__label" role="status">
+                    Reading today’s calendar…
+                  </p>
+                )}
+              </section>
+            )}
+          </div>
+        </section>
+      </div>
+      <section className="future-content-section" aria-label="Future content" />
     </main>
   );
 }

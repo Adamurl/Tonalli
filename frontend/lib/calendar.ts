@@ -9,9 +9,25 @@ export type CalendarDate = {
   correlation: string;
   tonalpohualli: TonalpohualliDate;
   day_sign: { name: string; english: string; position: number };
-  trecena: { sign: string; english: string };
-  xiuhpohualli: { veintena: string; day: number };
+  trecena: { number: number; sign: string; english: string };
+  xiuhpohualli: {
+    veintena: string;
+    day: number;
+    position: number;
+    reference: VeintenaReference;
+  };
   xihuitl: { number: number; sign: string };
+};
+
+export type VeintenaReference = {
+  position: number;
+  name: string;
+  span: string;
+  span_es: string;
+  meaning_es: string;
+  meaning_en: string;
+  correlation: string;
+  source: string;
 };
 
 export const NAHUATL_NUMBERS: Record<number, string> = {
@@ -45,7 +61,7 @@ export function formatDisplayDate(dateString: string): {
   const [year, month, day] = dateString.split("-").map(Number);
   const date = new Date(year, month - 1, day);
   return {
-    month: new Intl.DateTimeFormat("en", { month: "long" }).format(date),
+    month: date.toLocaleString("en-US", { month: "long" }),
     day: String(day),
     year: String(year),
   };
