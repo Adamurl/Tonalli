@@ -78,35 +78,33 @@ export default function Home() {
   return (
     <main className="tonalli-page">
       <SiteHeader />
-      <div className="calendar-scroll-stage">
-        <section className="calendar-screen" aria-busy={!calendar && !error}>
-          <CalendarAmbientBackground />
-          {date && (
-            <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
+      <section className="calendar-screen" aria-busy={!calendar && !error}>
+        <CalendarAmbientBackground />
+        {date && (
+          <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
+        )}
+        <div className="calendar-content">
+          {calendar && date ? (
+            <CalendarComposition data={calendar} date={date} />
+          ) : (
+            <section className="calendar-loading" aria-live="polite">
+              <SignGlyph size="hero" />
+              {error ? (
+                <div className="calendar-message" role="alert">
+                  <p>{error}</p>
+                  <button type="button" onClick={() => setRequestCount((value) => value + 1)}>
+                    Try again
+                  </button>
+                </div>
+              ) : (
+                <p className="calendar-loading__label" role="status">
+                  Reading today’s calendar…
+                </p>
+              )}
+            </section>
           )}
-          <div className="calendar-content">
-            {calendar && date ? (
-              <CalendarComposition data={calendar} date={date} />
-            ) : (
-              <section className="calendar-loading" aria-live="polite">
-                <SignGlyph size="hero" />
-                {error ? (
-                  <div className="calendar-message" role="alert">
-                    <p>{error}</p>
-                    <button type="button" onClick={() => setRequestCount((value) => value + 1)}>
-                      Try again
-                    </button>
-                  </div>
-                ) : (
-                  <p className="calendar-loading__label" role="status">
-                    Reading today’s calendar…
-                  </p>
-                )}
-              </section>
-            )}
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <section className="future-content-section" aria-label="Future content" />
     </main>
   );
