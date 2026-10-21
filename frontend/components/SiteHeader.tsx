@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import logo from "../assets/Tonalli_logo.png";
+import logo from "../assets/icons/Tonalli_logo.png";
 import styles from "./SiteHeader.module.css";
 
 const navigationItems = ["Menu item 1", "Menu item 2", "Menu item 3", "Menu item 4"];

@@ -1,25 +1,25 @@
 import Image, { type StaticImageData } from "next/image";
 
-import acatl from "../assets/Acatl.png";
-import atl from "../assets/Atl.png";
-import calli from "../assets/Calli.png";
-import cipactli from "../assets/Cipactli.png";
-import coatl from "../assets/Coatl.png";
-import cozcacuauhtli from "../assets/Cozcacuauhtli.png";
-import cuauhtli from "../assets/Cuauhtli.png";
-import cuetzpalin from "../assets/Cuetzpalin.png";
-import ehecatl from "../assets/Ehecatl.png";
-import itzcuintli from "../assets/Itzcuintli.png";
-import malinalli from "../assets/Malinalli.png";
-import mazatl from "../assets/Mazatl.png";
-import miquiztli from "../assets/Miquiztli.png";
-import ocelotl from "../assets/Ocelotl.png";
-import ollin from "../assets/Ollin.png";
-import ozomahtli from "../assets/Ozomahtli.png";
-import quiahuitl from "../assets/Quiahuitl.png";
-import tecpatl from "../assets/Tecpatl.png";
-import tochtli from "../assets/Tochtli.png";
-import xochitl from "../assets/Xochitl.png";
+import acatl from "../assets/icons/Acatl.png";
+import atl from "../assets/icons/Atl.png";
+import calli from "../assets/icons/Calli.png";
+import cipactli from "../assets/icons/Cipactli.png";
+import coatl from "../assets/icons/Coatl.png";
+import cozcacuauhtli from "../assets/icons/Cozcacuauhtli.png";
+import cuauhtli from "../assets/icons/Cuauhtli.png";
+import cuetzpalin from "../assets/icons/Cuetzpalin.png";
+import ehecatl from "../assets/icons/Ehecatl.png";
+import itzcuintli from "../assets/icons/Itzcuintli.png";
+import malinalli from "../assets/icons/Malinalli.png";
+import mazatl from "../assets/icons/Mazatl.png";
+import miquiztli from "../assets/icons/Miquiztli.png";
+import ocelotl from "../assets/icons/Ocelotl.png";
+import ollin from "../assets/icons/Ollin.png";
+import ozomahtli from "../assets/icons/Ozomahtli.png";
+import quiahuitl from "../assets/icons/Quiahuitl.png";
+import tecpatl from "../assets/icons/Tecpatl.png";
+import tochtli from "../assets/icons/Tochtli.png";
+import xochitl from "../assets/icons/Xochitl.png";
 
 const SIGN_GLYPHS: Record<string, StaticImageData> = {
   Acatl: acatl,
