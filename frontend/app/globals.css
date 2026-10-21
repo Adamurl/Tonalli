@@ -108,7 +108,29 @@ button, input { font: inherit; }
 }
 .day-sign__title-row,
 .day-sign__translations { display: contents; }
-.day-sign__title-row > .day-sign__word:first-child { transform: translateX(-0.15em); }
+.day-sign__art-link,
+.day-sign__word-link { display: block; color: inherit; cursor: none; text-decoration: none; }
+/* Keep the shared artwork above the translated labels' transform layers. */
+.day-sign__art-link { position: relative; z-index: 1; }
+.day-sign__art-link:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 4px; border-radius: 0.65rem; }
+.day-sign__word-link:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 4px; }
+.day-sign__cursor-label {
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  min-width: 4.6rem;
+  min-height: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 0.65rem;
+  translate: -50% -50%;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 400;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.day-sign__word--number { transform: translateX(-0.15em); }
 .day-sign__word {
   display: block;
   margin: 0;
@@ -137,7 +159,13 @@ button, input { font: inherit; }
   line-height: 1.2;
 }
 .day-sign__translations p { margin: 0; }
-.day-sign__translations p:first-child { transform: translateX(-0.15em); }
+/* Align the labels to the visible glyph edges rather than the font advance boxes. */
+.day-sign__translations p:first-child {
+  transform: translateX(calc(var(--day-sign-word-size) * -0.15));
+}
+.day-sign__translations p:last-child {
+  transform: translateX(calc(var(--day-sign-word-size) * 0.1));
+}
 .calendar-loading__label { color: #555; }
 .calendar-message { max-width: 30rem; text-align: center; }
 .calendar-message p { color: #555; }
@@ -150,6 +178,100 @@ button, input { font: inherit; }
   background: #fff;
   color: #111;
   cursor: pointer;
+}
+.day-detail-page {
+  position: relative;
+  display: flex;
+  min-height: 100svh;
+  align-items: flex-end;
+  padding: clamp(2rem, 7vw, 6rem);
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+}
+.day-detail-page--overlay {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  min-height: 100svh;
+  background: transparent;
+}
+.day-detail__art { position: fixed; inset: 0; }
+.day-detail__art {
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0;
+  background: #111;
+}
+.day-detail__art-image { object-fit: cover; }
+.day-detail__scrim {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgb(0 0 0 / 20%) 0%, transparent 30%, rgb(0 0 0 / 75%) 100%);
+}
+.day-detail__back {
+  position: absolute;
+  z-index: 4;
+  top: clamp(5rem, calc(4.375rem + 1rem), 6rem);
+  left: clamp(1.25rem, 3vw, 2.5rem);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.day-detail__back a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.day-detail__back a:focus-visible,
+.day-detail__message button:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+.day-detail__content {
+  position: relative;
+  z-index: 3;
+  width: min(100%, 72rem);
+  margin: 8rem auto 0;
+}
+.day-detail__date { margin: 0 0 0.75rem; font-size: 0.95rem; }
+.day-detail__content h1 {
+  max-width: 14ch;
+  margin: 0;
+  font-family: Poppins, var(--font-satoshi), sans-serif;
+  font-size: clamp(3rem, 9vw, 8rem);
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+.day-detail__meaning { margin: 1rem 0 0; font-size: clamp(1.1rem, 2vw, 1.5rem); }
+.day-detail__facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 3rem);
+  margin-top: clamp(2rem, 5vw, 4rem);
+  padding-top: 1rem;
+  border-top: 1px solid rgb(255 255 255 / 55%);
+}
+.day-detail__facts section h2 { margin: 0 0 0.45rem; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; }
+.day-detail__facts section p { margin: 0; font-size: 1.05rem; }
+.day-detail__facts section span { display: block; margin-top: 0.25rem; color: rgb(255 255 255 / 82%); font-size: 0.9rem; }
+.day-detail__loading,
+.day-detail__message { position: relative; z-index: 3; margin: auto; text-align: center; }
+.day-detail__message button {
+  margin-top: 0.75rem;
+  padding: 0.65rem 1.1rem;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .day-detail-page { padding: 2rem 1.25rem; }
+  .day-detail__facts { grid-template-columns: 1fr; gap: 1.25rem; }
 }
 
 /* Styles for the saved carousel component; it is not mounted on the landing page. */

@@ -65,6 +65,16 @@ describe("calendar home page", () => {
     );
   });
 
+  it("restores a selected date from the day detail return link", async () => {
+    window.history.replaceState({}, "", "/?date=2026-03-30");
+    fetchCalendar.mockResolvedValue(makeCalendarDate({ date: "2026-03-30" }));
+    render(<Home />);
+
+    expect(await screen.findByLabelText("Calendar date")).toHaveValue("2026-03-30");
+    expect(fetchCalendar).toHaveBeenCalledWith("2026-03-30", expect.any(AbortSignal));
+    window.history.replaceState({}, "", "/");
+  });
+
   it("ignores a stale response after the user changes the selected date", async () => {
     const requests: Array<{
       resolve: (value: ReturnType<typeof makeCalendarDate>) => void;

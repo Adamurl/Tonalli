@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 
 import { DateNavigator } from "../components/DateNavigator";
 import { DaySignSection } from "../components/DaySignSection";
-import { SiteHeader } from "../components/SiteHeader";
 import {
   getCalendarDate,
+  isValidCalendarDate,
   localDateString,
   type CalendarDate,
 } from "../lib/calendar";
@@ -18,7 +18,12 @@ export default function Home() {
   const [requestCount, setRequestCount] = useState(0);
 
   useEffect(() => {
-    setDate(localDateString(new Date()));
+    const selectedDate = new URLSearchParams(window.location.search).get("date");
+    setDate(
+      selectedDate && isValidCalendarDate(selectedDate)
+        ? selectedDate
+        : localDateString(new Date()),
+    );
   }, []);
 
   useEffect(() => {
@@ -50,14 +55,17 @@ export default function Home() {
 
   return (
     <main className="tonalli-page">
-      <SiteHeader />
       <section className="calendar-screen" aria-busy={!calendar && !error}>
         {date && (
           <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
         )}
         <div className="calendar-content">
           {calendar ? (
-            <DaySignSection sign={calendar.tonalpohualli} />
+            <DaySignSection
+              sign={calendar.tonalpohualli}
+              date={calendar.date}
+              calendar={calendar}
+            />
           ) : error ? (
             <div className="calendar-message" role="alert">
               <p>{error}</p>

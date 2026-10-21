@@ -3,6 +3,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   formatDisplayDate,
   getCalendarDate,
+  isValidCalendarDate,
   localDateString,
   NAHUATL_NUMBERS,
 } from "../lib/calendar";
@@ -10,12 +11,18 @@ import {
 describe("calendar utilities", () => {
   afterEach(() => vi.unstubAllGlobals());
 
+  it("accepts only real ISO calendar dates", () => {
+    expect(isValidCalendarDate("2026-03-29")).toBe(true);
+    expect(isValidCalendarDate("2026-02-30")).toBe(false);
+    expect(isValidCalendarDate("03-29-2026")).toBe(false);
+  });
+
   it("formats local dates without shifting the calendar day", () => {
     expect(localDateString(new Date(2026, 2, 9, 12))).toBe("2026-03-09");
     expect(formatDisplayDate("2026-03-09")).toEqual({
-      month: "03",
-      day: "09",
-      year: "26",
+      month: "March",
+      day: "9",
+      year: "2026",
     });
   });
 
