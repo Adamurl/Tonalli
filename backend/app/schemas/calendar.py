@@ -14,13 +14,27 @@ class TonalpohualliDate(BaseModel):
 
 
 class Trecena(BaseModel):
+    number: int
     sign: str
     english: str
+
+
+class VeintenaReference(BaseModel):
+    position: int
+    name: str
+    span: str
+    span_es: str
+    meaning_es: str
+    meaning_en: str
+    correlation: str
+    source: str
 
 
 class XiuhpohualliDate(BaseModel):
     veintena: str
     day: int
+    position: int
+    reference: VeintenaReference
 
 
 class XihuitlYear(BaseModel):
