@@ -113,14 +113,17 @@ button, input { font: inherit; }
   white-space: nowrap;
 }
 .day-sign__art-placeholder {
+  position: relative;
   width: var(--day-sign-art-width);
   height: 1cap;
+  overflow: hidden;
   font-family: Poppins, var(--font-satoshi), sans-serif;
   font-size: var(--day-sign-word-size);
   font-weight: 700;
   border-radius: 0.65rem;
   background: #dedede;
 }
+.day-sign__art-image { object-fit: cover; }
 .day-sign__translations {
   font-size: 0.8rem;
   line-height: 1.2;
