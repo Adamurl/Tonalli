@@ -10,8 +10,8 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "motion": "^14.3.0",
     "next": "16.4.1",
-    "ogl": "1.0.11",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },

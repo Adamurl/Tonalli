@@ -1,27 +1,25 @@
-import { DotCount } from "./DotCount";
-import { SignGlyph } from "./SignGlyph";
 import { NAHUATL_NUMBERS, type TonalpohualliDate } from "../lib/calendar";
 
 export function DaySignSection({ sign }: { sign: TonalpohualliDate }) {
   const numberName = NAHUATL_NUMBERS[sign.number];
+
   return (
-    <section className="day-sign" aria-labelledby="day-sign-name">
-      <div className="day-sign__emblem">
-        <DotCount count={sign.number} />
-        <SignGlyph sign={sign.sign} size="hero" />
-      </div>
-      <div className="day-sign__identity">
-        <h1
-          id="day-sign-name"
-          className="day-sign__name"
-          aria-label={numberName ? `${numberName} ${sign.sign}` : sign.sign}
-        >
-          {numberName && <span>{numberName}</span>}
-          <span>{sign.sign}</span>
-        </h1>
-        <p className="day-sign__translation">
-          {sign.number} {sign.english}
-        </p>
+    <section className="day-sign" aria-label="Today’s Tonalpohualli sign">
+      <div className="day-sign__composition">
+        <div className="day-sign__title-row">
+          <span className="day-sign__word" aria-label={numberName || String(sign.number)}>
+            {numberName}
+          </span>
+          <div className="day-sign__art-placeholder" aria-label="Day sign artwork placeholder" />
+          <h1 className="day-sign__word" aria-label={numberName ? `${numberName} ${sign.sign}` : sign.sign}>
+            {sign.sign}
+          </h1>
+        </div>
+        <div className="day-sign__translations">
+          <p>{sign.number}</p>
+          <span aria-hidden="true" />
+          <p>{sign.english}</p>
+        </div>
       </div>
     </section>
   );
