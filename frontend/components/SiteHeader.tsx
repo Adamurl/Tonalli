@@ -1,14 +1,15 @@
 "use client";
 
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-import logo from "../assets/icons/Tonalli_logo.png";
 import styles from "./SiteHeader.module.css";
 
 const navigationItems = ["Menu item 1", "Menu item 2", "Menu item 3", "Menu item 4"];
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  const isDayDetail = Boolean(pathname && pathname !== "/");
   const [menuOpen, setMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -42,12 +43,11 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return (
-    <header className={styles.header} ref={headerRef}>
-      <a className={styles.brand} href="/" aria-label="Tonalli home">
-        <Image src={logo} alt="" priority className={styles.logo} />
-      </a>
-
-      <nav className={styles.desktopNavigation} aria-label="Main navigation">
+    <header
+      className={`${styles.header}${isDayDetail ? ` ${styles.dayDetail}` : ""}`}
+      ref={headerRef}
+    >
+      <nav className={`${styles.desktopNavigation} glass-surface`} aria-label="Main navigation">
         {navigationItems.map((item) => (
           <span className={styles.navigationItem} key={item}>
             {item}
@@ -60,7 +60,7 @@ export function SiteHeader() {
       </button>
 
       <button
-        className={styles.menuButton}
+        className={`${styles.menuButton} glass-surface`}
         type="button"
         aria-expanded={menuOpen}
         aria-controls="mobile-navigation"
@@ -79,7 +79,7 @@ export function SiteHeader() {
       {menuOpen && (
         <div className={styles.menuLayer}>
           <nav
-            className={styles.mobileNavigation}
+            className={`${styles.mobileNavigation} glass-surface`}
             id="mobile-navigation"
             aria-label="Mobile navigation"
           >

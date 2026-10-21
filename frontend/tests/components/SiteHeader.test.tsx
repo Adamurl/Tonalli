@@ -1,14 +1,20 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import { SiteHeader } from "../../components/SiteHeader";
+import styles from "../../components/SiteHeader.module.css";
+
+const { pathname } = vi.hoisted(() => ({ pathname: { value: "/" } }));
+
+vi.mock("next/navigation", () => ({
+  usePathname: () => pathname.value,
+}));
 
 describe("SiteHeader", () => {
-  it("shows the brand, desktop navigation placeholders, and inert download action", () => {
+  it("shows desktop navigation and the Download action without a logo", () => {
     render(<SiteHeader />);
 
-    expect(screen.getByRole("link", { name: "Tonalli home" })).toHaveAttribute("href", "/");
     const desktopNavigation = screen.getByRole("navigation", {
       name: "Main navigation",
     });
@@ -19,6 +25,16 @@ describe("SiteHeader", () => {
       "aria-expanded",
       "false",
     );
+    expect(screen.queryByRole("link", { name: "Tonalli home" })).not.toBeInTheDocument();
+  });
+
+  it("uses the day detail theme for the Download action", () => {
+    pathname.value = "/2026-03-29";
+    render(<SiteHeader />);
+
+    expect(screen.getByRole("banner")).toHaveClass(styles.dayDetail);
+    expect(screen.getByRole("button", { name: "Download" })).toHaveClass(styles.downloadButton);
+    pathname.value = "/";
   });
 
   it("opens the dropdown and closes it with Escape while restoring focus", async () => {
