@@ -24,6 +24,10 @@ describe("calendar home page", () => {
 
     expect(screen.getByRole("status")).toHaveTextContent("Reading today’s calendar");
     expect(await screen.findByRole("heading", { name: "Ce Cipactli" })).toBeInTheDocument();
+    expect(screen.getByLabelText("Cipactli day sign artwork")).toBeInTheDocument();
+    expect(screen.queryByRole("link")).not.toBeInTheDocument();
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+    expect(screen.getByText("An interpretation of the date")).toBeInTheDocument();
     expect(fetchCalendar).toHaveBeenCalledTimes(1);
     expect(fetchCalendar).toHaveBeenCalledWith("2026-03-29", expect.any(AbortSignal));
   });
@@ -57,6 +61,7 @@ describe("calendar home page", () => {
       target: { value: "2026-03-30" },
     });
 
+    expect(window.scrollTo).toHaveBeenCalledWith({ top: 0, behavior: "instant" });
     await waitFor(() =>
       expect(fetchCalendar).toHaveBeenLastCalledWith(
         "2026-03-30",
@@ -65,7 +70,7 @@ describe("calendar home page", () => {
     );
   });
 
-  it("restores a selected date from the day detail return link", async () => {
+  it("restores a selected date from the URL", async () => {
     window.history.replaceState({}, "", "/?date=2026-03-30");
     fetchCalendar.mockResolvedValue(makeCalendarDate({ date: "2026-03-30" }));
     render(<Home />);

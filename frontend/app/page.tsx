@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { DateNavigator } from "../components/DateNavigator";
-import { DaySignSection } from "../components/DaySignSection";
+import { DayScrollExperience } from "../components/DayScrollExperience";
 import {
   getCalendarDate,
   isValidCalendarDate,
@@ -31,6 +31,7 @@ export default function Home() {
     const requestedDate = date;
     const controller = new AbortController();
 
+    window.scrollTo({ top: 0, behavior: "instant" });
     setCalendar(null);
     setError(null);
     getCalendarDate(requestedDate, controller.signal)
@@ -53,33 +54,23 @@ export default function Home() {
     setDate(localDateString(new Date(year, month - 1, day + days)));
   }
 
+  const controls = date ? <DateNavigator date={date} onChange={setDate} onShift={shiftDate} /> : null;
+
   return (
-    <main className="tonalli-page">
-      <section className="calendar-screen" aria-busy={!calendar && !error}>
-        {date && (
-          <DateNavigator date={date} onChange={setDate} onShift={shiftDate} />
-        )}
-        <div className="calendar-content">
-          {calendar ? (
-            <DaySignSection
-              sign={calendar.tonalpohualli}
-              date={calendar.date}
-              calendar={calendar}
-            />
-          ) : error ? (
+    <main className="tonalli-page" aria-busy={!calendar && !error}>
+      {calendar ? (
+        <DayScrollExperience key={calendar.date} calendar={calendar} controls={controls} />
+      ) : (
+        <section className="calendar-screen site-grid">
+          {controls}
+          {error ? (
             <div className="calendar-message" role="alert">
               <p>{error}</p>
-              <button type="button" onClick={() => setRequestCount((value) => value + 1)}>
-                Try again
-              </button>
+              <button type="button" onClick={() => setRequestCount((value) => value + 1)}>Try again</button>
             </div>
-          ) : (
-            <p className="calendar-loading__label" role="status">
-              Reading today’s calendar…
-            </p>
-          )}
-        </div>
-      </section>
+          ) : <p className="calendar-loading__label" role="status">Reading today’s calendar…</p>}
+        </section>
+      )}
     </main>
   );
 }

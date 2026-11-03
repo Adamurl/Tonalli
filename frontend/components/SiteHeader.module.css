@@ -7,23 +7,22 @@
   height: 4.375rem;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 0.625rem clamp(1.25rem, 3.5vw, 3.125rem);
+  padding: 0.625rem var(--page-margin);
   color: #111;
-  transition: color 900ms cubic-bezier(0.72, 0, 0.96, 1);
 }
 
-.dayDetail {
+:global(html[data-day-scene="image"]) .header {
   color: #fff;
 }
 
-.dayDetail .downloadButton,
-.dayDetail .mobileDownloadButton {
+:global(html[data-day-scene="image"]) .header .downloadButton,
+:global(html[data-day-scene="image"]) .header .mobileDownloadButton {
   background: #fff;
   color: #111;
 }
 
-.dayDetail .downloadButton:hover,
-.dayDetail .mobileDownloadButton:hover {
+:global(html[data-day-scene="image"]) .header .downloadButton:hover,
+:global(html[data-day-scene="image"]) .header .mobileDownloadButton:hover {
   background: #e8e8e8;
 }
 
@@ -66,7 +65,7 @@
   font-size: 0.95rem;
   font-weight: 400;
   cursor: pointer;
-  transition: background-color 180ms ease, transform 180ms ease, color 900ms cubic-bezier(0.72, 0, 0.96, 1);
+  transition: background-color 180ms ease, transform 180ms ease, color 180ms ease;
 }
 
 .downloadButton:hover,
@@ -89,7 +88,7 @@
   inset: 100% 0 auto;
   display: flex;
   justify-content: center;
-  padding: 0 clamp(1rem, 3.5vw, 3.125rem);
+  padding: 0 var(--page-margin);
 }
 
 .mobileNavigation {
@@ -143,7 +142,6 @@
 @media (max-width: 760px) {
   .header {
     grid-template-columns: 1fr auto 1fr;
-    padding-inline: 1rem;
   }
 
   .desktopNavigation,

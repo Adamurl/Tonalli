@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 import "./globals.css";
-import { DayTransitionProvider } from "../components/DayTransitionContext";
 import { SiteHeader } from "../components/SiteHeader";
 
 export const metadata: Metadata = {
@@ -12,16 +11,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  modal,
-}: Readonly<{ children: ReactNode; modal: ReactNode }>) {
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
       <body>
-        <DayTransitionProvider>
-          {children}
-          {modal}
-          <SiteHeader />
-        </DayTransitionProvider>
+        {children}
+        <SiteHeader />
       </body>
     </html>
   );

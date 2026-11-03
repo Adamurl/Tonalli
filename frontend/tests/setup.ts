@@ -24,3 +24,10 @@ vi.mock("next/image", async () => {
     },
   };
 });
+
+vi.stubGlobal("ResizeObserver", class {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+});
+Object.defineProperty(window, "scrollTo", { value: vi.fn(), writable: true });

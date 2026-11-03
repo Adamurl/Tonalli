@@ -1,6 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import styles from "./SiteHeader.module.css";
@@ -8,8 +7,6 @@ import styles from "./SiteHeader.module.css";
 const navigationItems = ["Menu item 1", "Menu item 2", "Menu item 3", "Menu item 4"];
 
 export function SiteHeader() {
-  const pathname = usePathname();
-  const isDayDetail = Boolean(pathname && pathname !== "/");
   const [menuOpen, setMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -44,7 +41,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`${styles.header}${isDayDetail ? ` ${styles.dayDetail}` : ""}`}
+      className={styles.header}
       ref={headerRef}
     >
       <nav className={`${styles.desktopNavigation} glass-surface`} aria-label="Main navigation">

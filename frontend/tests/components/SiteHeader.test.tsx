@@ -3,13 +3,6 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 
 import { SiteHeader } from "../../components/SiteHeader";
-import styles from "../../components/SiteHeader.module.css";
-
-const { pathname } = vi.hoisted(() => ({ pathname: { value: "/" } }));
-
-vi.mock("next/navigation", () => ({
-  usePathname: () => pathname.value,
-}));
 
 describe("SiteHeader", () => {
   it("shows desktop navigation and the Download action without a logo", () => {
@@ -26,15 +19,6 @@ describe("SiteHeader", () => {
       "false",
     );
     expect(screen.queryByRole("link", { name: "Tonalli home" })).not.toBeInTheDocument();
-  });
-
-  it("uses the day detail theme for the Download action", () => {
-    pathname.value = "/2026-03-29";
-    render(<SiteHeader />);
-
-    expect(screen.getByRole("banner")).toHaveClass(styles.dayDetail);
-    expect(screen.getByRole("button", { name: "Download" })).toHaveClass(styles.downloadButton);
-    pathname.value = "/";
   });
 
   it("opens the dropdown and closes it with Escape while restoring focus", async () => {

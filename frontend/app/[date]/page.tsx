@@ -1,10 +1,8 @@
-"use client";
+import { notFound, redirect } from "next/navigation";
+import { isValidCalendarDate } from "../../lib/calendar";
 
-import { useParams } from "next/navigation";
-
-import { DayDetailView } from "../../components/DayDetailView";
-
-export default function DayDetailPage() {
-  const { date } = useParams<{ date: string }>();
-  return <DayDetailView date={date} presentation="page" />;
+export default async function DayDetailPage({ params }: { params: Promise<{ date: string }> }) {
+  const { date } = await params;
+  if (!isValidCalendarDate(date)) notFound();
+  redirect(`/?date=${encodeURIComponent(date)}`);
 }
