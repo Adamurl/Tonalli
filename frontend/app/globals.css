@@ -26,6 +26,9 @@
 
 * { box-sizing: border-box; }
 html, body { min-height: 100%; margin: 0; }
+/* Keep the scroll-driven scene usable without a visible page scrollbar. */
+html { scrollbar-width: none; }
+html::-webkit-scrollbar { display: none; }
 body {
   overflow-x: hidden;
   background: #fff;
