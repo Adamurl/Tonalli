@@ -25,3 +25,7 @@ frontend/build/
 # Local editor and OS files
 .DS_Store
 *.log
+
+TEMP/
+.audit/
+supabase/.temp/
