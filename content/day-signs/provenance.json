@@ -1,0 +1,3941 @@
+{
+  "status": "Editorial synthesis published to Tonalli Supabase and verified on 2026-11-05 UTC. Display text is newly composed synthesis, not verbatim translation. See backups/day_signs-before-editorial-update-2026-11-05T044938Z.manifest.json.",
+  "identity_policy": "Names, English labels and positions match the live-row snapshot supplied at /tmp/tonalli-day-signs-rows.json. The snapshot is an ephemeral identity check, not a research source.",
+  "sources": {
+    "earlier_reference": {
+      "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+      "identity": "Running title Calendario Mexicano visible in the original scans. Author, date and full edition are not identified.",
+      "page_convention": "Printed book pages, distinct from 1-based PDF pages. Exact per-entry printed coverage is recorded below as documented by the reference.",
+      "underlying_scan_identifiers": [
+        "books/scan.pdf",
+        "books/scan0174.pdf"
+      ],
+      "availability_note": "These are original identifiers preserved by the reference, not a claim that the scans remain present. Source notes report removal of scan/photo/OCR artifacts.",
+      "coverage": "Earlier printed pages 81–96 missing. Five independent entries absent; Mazatl opening-only and Acatl closing-only."
+    },
+    "new_translation": {
+      "path": "content/calendar/translation.en.md",
+      "index": "content/calendar/new-source/README.md",
+      "source_notes": "content/calendar/SOURCE_NOTES.md",
+      "identity": "Photographed source edition not fully identified. Kept separate from the earlier reference.",
+      "page_convention": "Printed pages in the photographed source. Day signs cover pages 115–137.",
+      "translation_scope": "Source statements are preserved as translated, including unverified historical, linguistic, scientific and character claims. Their translation is not independent verification."
+    },
+    "existing_editorial": {
+      "path": "tonalpohualli_day_signs_content/README.md",
+      "identity": "Existing project editorial drafts with source bibliography. Secondary references were read through these local drafts only; their linked remote publications were not fetched or independently rechecked.",
+      "locator_policy": "Heading locators are supplied for local drafts. Precise printed page numbers for the external bibliography are not present in the local drafts and are not invented."
+    }
+  },
+  "global_omissions": [
+    "All attributed birth-character and horoscope readings are omitted from display copy.",
+    "No fixed good/bad fortune is assigned to a sign, and no specific trecena interpretation is generalized to every date with that sign.",
+    "Speculative etymologies, genetic memory, lunar control of human behavior, bioenergy, telepathy and other unverified scientific assertions are excluded.",
+    "Named religious figures in display are contextual associations, not universal patron assignments. Sign, numeral, year and trecena roles remain separate.",
+    "No source names, citation markers, edition claims or editorial cautions appear in display copy."
+  ],
+  "records": {
+    "cipactli": {
+      "name": "Cipactli",
+      "english": "Crocodile",
+      "position": 1,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/cipactli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/cipactli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        115,
+        116
+      ],
+      "earlier_printed_pages": [
+        67,
+        68,
+        69
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Name and natural description",
+          "supporting_note": "The source introduces the first day sign, records several animal translations, and gives its own proposed analysis of the name.",
+          "printed_pages": [
+            115
+          ]
+        },
+        {
+          "section": "Origins and earth symbolism",
+          "supporting_note": "The source associates Cipactli with early life, emergence from water, Tamoanchan, and the Earth. It links the flint fangs with its account of ancestral knowledge.",
+          "printed_pages": [
+            115
+          ]
+        },
+        {
+          "section": "Quoted account",
+          "supporting_note": "The Ita Andehui quotation connects the fantastic crocodilian being with beginnings and the name Cipactonal.",
+          "printed_pages": [
+            116
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes energetic leadership, initiative, tenacity, firm principles, and responsibility to birth under this sign.",
+          "printed_pages": [
+            115,
+            116
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 75 of the Nuttall Codex and the Stone of the Suns.",
+          "printed_pages": [
+            115,
+            116
+          ]
+        },
+        {
+          "section": "Ruling association",
+          "supporting_note": "This entry has no explicit ruling-figure subsection; its discussion does not supply a separate patron assignment.",
+          "printed_pages": [
+            115,
+            116
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "First sign; crocodilian strength, marsh and land imagery, earth and origins. Creation-body account comes from the existing editorial context; field-ridge comparison comes from the newer translated testimony on page 115.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cipactli.en.md",
+            "printed_pages": [
+              115,
+              116
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.1, Cipactli",
+            "printed_pages": [
+              67,
+              68,
+              69
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cipactli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Composite crocodilian head and teeth are documented by the existing draft Quick reference and Literal meaning and glyph. The newer entry supplies varied animal renderings, not a definitive species.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cipactli.en.md",
+            "printed_pages": [
+              115
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.1, Cipactli",
+            "printed_pages": [
+              67,
+              68,
+              69
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cipactli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Beginnings, watery origins, and animate earth combine earlier and newer meaning passages. Consuming earth is retained from the existing Tlaltecuhtli-related creation context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cipactli.en.md",
+            "printed_pages": [
+              115,
+              116
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.1, Cipactli",
+            "printed_pages": [
+              67,
+              68,
+              69
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cipactli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Primordial-earth narratives and Tlaltecuhtli relationship are supported by existing Cultural and historical context; marsh imagery is supported by both translated meaning sections.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cipactli.en.md",
+            "printed_pages": [
+              115,
+              116
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.1, Cipactli",
+            "printed_pages": [
+              67,
+              68,
+              69
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cipactli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Tonacatecuhtli",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted ce/icpac proposed etymology, prehistoric-reptile reconstruction, genetic-memory explanation, and universal assertion that all months and years begin with Cipactli. Earlier paired Tonacatecuhtli/Tonacacihuatl association is retained in the reference, not flattened to a single universal ruler."
+      ]
+    },
+    "ehecatl": {
+      "name": "Ehecatl",
+      "english": "Wind",
+      "position": 2,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/ehecatl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/ehecatl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        116,
+        117
+      ],
+      "earlier_printed_pages": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Meaning and glyph",
+          "supporting_note": "The source describes air as vital nourishment and the elongated wind mask as the sign image.",
+          "printed_pages": [
+            116
+          ]
+        },
+        {
+          "section": "Wind in nature",
+          "supporting_note": "The oral account and following explanation describe wind carrying clouds, scattering seeds, sweeping fields, and carrying sound.",
+          "printed_pages": [
+            116,
+            117
+          ]
+        },
+        {
+          "section": "Named figure and breath",
+          "supporting_note": "The source discusses Ehecatl as part of Quetzalcoatl and connects ihiyotl with inspiration. There is no separate ruler heading.",
+          "printed_pages": [
+            116,
+            117
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source describes changes between calm and fury, and associates creative work, expression, and singing with centering those tendencies.",
+          "printed_pages": [
+            117
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 56 of the Borgia Codex and the Stone of the Suns.",
+          "printed_pages": [
+            116,
+            117
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Wind, the projecting mask, clouds, dispersed seeds, breath, and sound occur in both translated meaning passages. The sower is a metaphor for seed dispersal.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ehecatl.en.md",
+            "printed_pages": [
+              116,
+              117
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.2, Ehecatl",
+            "printed_pages": [
+              69,
+              70,
+              71,
+              72
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ehecatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Name and long-beaked wind mask are described on newer page 116 and in the earlier meaning passage. Sequence position comes from canonical data.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ehecatl.en.md",
+            "printed_pages": [
+              116
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.2, Ehecatl",
+            "printed_pages": [
+              69,
+              70,
+              71,
+              72
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ehecatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Cloud transport and seed dispersal on page 116; breath, sounds, music, and inspiration continue on page 117. Gentle and strong winds are direct natural comparisons.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ehecatl.en.md",
+            "printed_pages": [
+              116,
+              117
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.2, Ehecatl",
+            "printed_pages": [
+              69,
+              70,
+              71,
+              72
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ehecatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Ehecatl-Quetzalcoatl and cosmic motion are already in the existing context; field and breathing imagery is supported by both translations.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ehecatl.en.md",
+            "printed_pages": [
+              116,
+              117
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.2, Ehecatl",
+            "printed_pages": [
+              69,
+              70,
+              71,
+              72
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ehecatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Quetzalcoatl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted the categorical claim that without wind all sound is impossible. Breath and voice are retained as symbolic and experiential associations. Nested Quetzalcoatl functions are not additional sign patrons."
+      ]
+    },
+    "calli": {
+      "name": "Calli",
+      "english": "House",
+      "position": 3,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/calli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/calli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        117
+      ],
+      "earlier_printed_pages": [
+        72,
+        73
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Name and containing structures",
+          "supporting_note": "The source distinguishes calli, a building or enclosure, from chantli, a dwelling, and quotes examples of protective or containing objects.",
+          "printed_pages": [
+            117
+          ]
+        },
+        {
+          "section": "Self and primordial house",
+          "supporting_note": "The source describes the self as a vessel of its essence and Cincalco as the primordial house and womb of Mother Earth.",
+          "printed_pages": [
+            117
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes creativity, protection, attachment to family, study, work, provision, and a somewhat sedentary life to the sign.",
+          "printed_pages": [
+            117
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 6 of the Nuttall Codex and the Sun Stone.",
+          "printed_pages": [
+            117
+          ]
+        },
+        {
+          "section": "Ruling association",
+          "supporting_note": "This entry has no explicit ruling-figure subsection. Its house imagery does not establish a separate patron assignment.",
+          "printed_pages": [
+            117
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Enclosure, protection, and containing vessels occur in both translations. Household work, family continuity, ritual, and year names come from existing draft context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/calli.en.md",
+            "printed_pages": [
+              117
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.3, Calli",
+            "printed_pages": [
+              72,
+              73
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/calli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "House and building meaning comes from both translations; architectural enclosure and roof/entrance recognition expand the existing glyph description without claiming a specific source illustration.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/calli.en.md",
+            "printed_pages": [
+              117
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.3, Calli",
+            "printed_pages": [
+              72,
+              73
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/calli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Containment, protection, the self as a vessel, and inward attention are present in both translated entries. Household continuity and keeping resources extend existing symbolism.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/calli.en.md",
+            "printed_pages": [
+              117
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.3, Calli",
+            "printed_pages": [
+              72,
+              73
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/calli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Household production, ritual, inheritance, and community connections are supported by the existing context. The four year signs and fifty-two-year cycle are retained from its calendrical notes.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/calli.en.md",
+            "printed_pages": [
+              117
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.3, Calli",
+            "printed_pages": [
+              72,
+              73
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/calli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Tepeyollotl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted unverified compound-word etymologies and equation of Cincalco with Tamoanchan. The inward-vessel image is treated as symbolism. Tepeyolohtli is related context, not the House glyph itself."
+      ]
+    },
+    "cuetzpalin": {
+      "name": "Cuetzpalin",
+      "english": "Lizard",
+      "position": 4,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/cuetzpalin.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/cuetzpalin.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        118
+      ],
+      "earlier_printed_pages": [
+        74,
+        75
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Name and natural description",
+          "supporting_note": "The source gives Cuetzpalli and Cuetzpalin as lizard names, quotes observations of their movement, and discusses iguana and tree-lizard names.",
+          "printed_pages": [
+            118
+          ]
+        },
+        {
+          "section": "Fertility and codex imagery",
+          "supporting_note": "The source connects reptiles with fertility and sexuality and discusses Xochipilli and Tezcatlipoca in Borgia Codex imagery.",
+          "printed_pages": [
+            118
+          ]
+        },
+        {
+          "section": "Historical quotations",
+          "supporting_note": "The passage includes Jacinto de la Serna's description and a quotation about descendants, followed by the source's discussion of chroniclers' judgments.",
+          "printed_pages": [
+            118
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The fertility reading explicitly depends on other Tonalpohualli elements. The source also makes claims about sensory possibilities and determination.",
+          "printed_pages": [
+            118
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 20 of the Borgia Codex and the Stone of the Suns.",
+          "printed_pages": [
+            118
+          ]
+        },
+        {
+          "section": "Ruling association",
+          "supporting_note": "The named figures occur in the imagery discussion; this entry has no explicit ruler heading.",
+          "printed_pages": [
+            118
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Ground-level movement and small reptile are on page 118; fertility and sexuality are explicit symbolic associations in both translations. No birth reading is transferred.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuetzpalin.en.md",
+            "printed_pages": [
+              118
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.4, Cuetzpalin",
+            "printed_pages": [
+              74,
+              75
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuetzpalin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Cuetzpalli/Cuetzpalin variants and small lizard identity come from page 118; elongated body and tail come from the existing Quick reference glyph description.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuetzpalin.en.md",
+            "printed_pages": [
+              118
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.4, Cuetzpalin",
+            "printed_pages": [
+              74,
+              75
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuetzpalin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "The newer page 118 and earlier meaning section connect lizard imagery with fertility and sexuality, including sexually explicit Borgia imagery. Active bodily life is editorial synthesis of those images.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuetzpalin.en.md",
+            "printed_pages": [
+              118
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.4, Cuetzpalin",
+            "printed_pages": [
+              74,
+              75
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuetzpalin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Earlier Huehuecoyotl subsection provides the dance and pleasure context. The divine figure is described as related context rather than asserted as an agreed universal sign ruler.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuetzpalin.en.md",
+            "printed_pages": [
+              118
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.4, Cuetzpalin",
+            "printed_pages": [
+              74,
+              75
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuetzpalin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Huehuecoyotl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted fertility/infertility predictions, prehistoric-iguana comparison, and sensory-power claims. Earlier dance/pleasure discussion under Huehuecoyotl supplies context only. The existing Ce Cuetzpalin fall/recovery passage was not generalized into a property of every date."
+      ]
+    },
+    "coatl": {
+      "name": "Coatl",
+      "english": "Serpent",
+      "position": 5,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/coatl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/coatl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        119,
+        120
+      ],
+      "earlier_printed_pages": [
+        75,
+        76,
+        77
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Name and natural observations",
+          "supporting_note": "The source identifies serpent as a generic reptile term and quotes countryside accounts of snakes' senses, motion, and skin.",
+          "printed_pages": [
+            119
+          ]
+        },
+        {
+          "section": "Energy and complementary forces",
+          "supporting_note": "The source associates the serpent with life energy, fertility cycles, the two-headed serpent, and forms of adornment.",
+          "printed_pages": [
+            119
+          ]
+        },
+        {
+          "section": "Creation narrative and named figures",
+          "supporting_note": "The passage recounts Tezcatlipoca and Quetzalcoatl dividing Tlaltecuhtli and names Tonantzin Coatlicue, Oxomoco, and Cipactonal. It has no separate ruler heading.",
+          "printed_pages": [
+            119
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes sensitivity, generosity, change, intelligence, and mental influence to the sign, followed by its explanation of chroniclers' negative judgments.",
+          "printed_pages": [
+            120
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 65 of the Borgia Codex and the Stone of the Suns.",
+          "printed_pages": [
+            119
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Undulating motion, skin shedding, ornaments, paired serpents, and Coatlicue appear on page 119 and in the earlier meaning passage. Wider sacred settings are supported by the existing draft.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/coatl.en.md",
+            "printed_pages": [
+              119
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.5, Coatl",
+            "printed_pages": [
+              75,
+              76,
+              77
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/coatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Serpent/snake lexical meaning comes from both translations; head and curved body come from existing Quick reference. Fangs and tongue are general identifying details, not a claim about a single scanned image.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/coatl.en.md",
+            "printed_pages": [
+              119
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.5, Coatl",
+            "printed_pages": [
+              75,
+              76,
+              77
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/coatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Living movement, water, fertility, paired forms, and feathered imagery are supported by both meaning sections and the existing core symbolism. Skin shedding remains a natural image rather than a claim about human traits.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/coatl.en.md",
+            "printed_pages": [
+              119
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.5, Coatl",
+            "printed_pages": [
+              75,
+              76,
+              77
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/coatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Existing context identifies Quetzalcoatl and differentiates serpent forms; both translations connect Coatlicue and serpents with creation. No application correlation or fall-of-Tenochtitlan anchor is used.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/coatl.en.md",
+            "printed_pages": [
+              119
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.5, Coatl",
+            "printed_pages": [
+              75,
+              76,
+              77
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/coatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Chalchihuitlicue",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted telepathy, human energy emissions, special forehead senses, and explanations of Christian chroniclers' motives as established history. Quetzalcoatl is one serpent context, not a definition of all serpents. Earlier paired water rulers and their source spelling variants remain in the reference only."
+      ]
+    },
+    "miquiztli": {
+      "name": "Miquiztli",
+      "english": "Death",
+      "position": 6,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/miquiztli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/miquiztli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        120,
+        121
+      ],
+      "earlier_printed_pages": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Literal meaning and passage",
+          "supporting_note": "The source translates the name as death and presents an oral account of death as a change followed by renewed life.",
+          "printed_pages": [
+            120
+          ]
+        },
+        {
+          "section": "Rest and renewal",
+          "supporting_note": "Examples concern seeds, winter, sleep, concentration, recovery, and the source's reproductive analogy. Malinalli is a cross-reference for continual renewal.",
+          "printed_pages": [
+            120
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source contrasts chroniclers' judgments with a reading of reflection, persistence, inward reserve, and influence through suggestions.",
+          "printed_pages": [
+            121
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 26 of the Borgia Codex and the Stone of the Suns.",
+          "printed_pages": [
+            120
+          ]
+        },
+        {
+          "section": "Ruling association",
+          "supporting_note": "This entry has no explicit ruling-figure subsection; Malinalli is discussed as another sign, not as a patron.",
+          "printed_pages": [
+            120,
+            121
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Death as passage, rest, and renewal is on page 120 and earlier meaning passages. Skull and differentiated journeys/destinations come from existing glyph and context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/miquiztli.en.md",
+            "printed_pages": [
+              120
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.6, Miquiztli",
+            "printed_pages": [
+              77,
+              78,
+              79,
+              80
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/miquiztli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Death is the literal translation on page 120. Human skull imagery is in the existing glyph description. Anatomical visual details are descriptive rather than a reproduction claim.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/miquiztli.en.md",
+            "printed_pages": [
+              120
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.6, Miquiztli",
+            "printed_pages": [
+              77,
+              78,
+              79,
+              80
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/miquiztli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Rest, transformation, stillness before renewal, and the Miquiztli/Malinalli relationship are on page 120 and earlier pages 77–80. The continuation of the calendar is editorial description of its recurrence.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/miquiztli.en.md",
+            "printed_pages": [
+              120
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.6, Miquiztli",
+            "printed_pages": [
+              77,
+              78,
+              79,
+              80
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/miquiztli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Different postmortem destinations and connections among decomposition, sacrifice, and fertility come from existing cultural context. This copy avoids making the newer source universalize all Indigenous attitudes toward death.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/miquiztli.en.md",
+            "printed_pages": [
+              120,
+              121
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.6, Miquiztli",
+            "printed_pages": [
+              77,
+              78,
+              79,
+              80
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/miquiztli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Tecciztecatl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted reproductive physiology analogies and blanket claims that all Indigenous traditions regarded death only as renewal. Existing disagreement between Sahagún and Durán remains evidence against a fixed favorable/unfavorable verdict. Tecziztecatl/Tecciztecatl patron spellings are not normalized in display."
+      ]
+    },
+    "mazatl": {
+      "name": "Mazatl",
+      "english": "Deer",
+      "position": 7,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/mazatl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/mazatl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        121,
+        122
+      ],
+      "earlier_printed_pages": [
+        80
+      ],
+      "earlier_coverage": "partial",
+      "newer_section_notes": [
+        {
+          "section": "Name and natural description",
+          "supporting_note": "The source identifies deer species and describes alertness, hearing, agility, sensitivity to weather, and freedom of movement.",
+          "printed_pages": [
+            121
+          ]
+        },
+        {
+          "section": "Solar symbolism and named figure",
+          "supporting_note": "The source links the deer with the Sun, heat, and fire. It discusses Xochipilli in plate 53 of the Borgia Codex, without a separate ruler heading.",
+          "printed_pages": [
+            121
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "Durán, Sahagún, and countryside accounts are cited for restlessness, perception, affection, preference for open spaces, and the continuation about physique and movement.",
+          "printed_pages": [
+            121,
+            122
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 19 of the Borgia Codex and the Stone of the Suns; the body also discusses plate 53.",
+          "printed_pages": [
+            121,
+            122
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Deer in hills, keen hearing, agility, wind and rain are in both translations, with the newer complete entry on pages 121–122. Subsistence and hunting relationships come from existing context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/mazatl.en.md",
+            "printed_pages": [
+              121,
+              122
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.7, Mazatl",
+            "printed_pages": [
+              80
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/mazatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Deer as a generic name is on page 121; head, ears, and antlers are in the existing glyph description. Species is left broad.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/mazatl.en.md",
+            "printed_pages": [
+              121
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.7, Mazatl",
+            "printed_pages": [
+              80
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/mazatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Alert posture and movement, Sun and heat associations are on page 121 and earlier surviving page 80. Hunting and sustenance are retained from existing core/context material.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/mazatl.en.md",
+            "printed_pages": [
+              121
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.7, Mazatl",
+            "printed_pages": [
+              80
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/mazatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Meat, hides, bone, hunting, and offerings come from the existing draft. The completed newer entry supplies environmental detail but its claims about human physique and freedom are excluded.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/mazatl.en.md",
+            "printed_pages": [
+              121,
+              122
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.7, Mazatl",
+            "printed_pages": [
+              80
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/mazatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Tlaloc",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Earlier source is partial, opening only on printed page 80; no surviving patron heading or full character reading. Newer complete pages 121–122 fill coverage without reconstructing the missing earlier text. Xochipilli occurs in imagery discussion, not an explicit newer ruler heading. Omitted hearing-with-hooves and all birth/body-type claims."
+      ]
+    },
+    "tochtli": {
+      "name": "Tochtli",
+      "english": "Rabbit",
+      "position": 8,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/tochtli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/tochtli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        122,
+        123
+      ],
+      "earlier_printed_pages": [],
+      "earlier_coverage": "absent",
+      "newer_section_notes": [
+        {
+          "section": "Name and oral account",
+          "supporting_note": "The source introduces the rabbit and quotes stories about cleverness, predators, reproduction, and its image on the Moon.",
+          "printed_pages": [
+            122
+          ]
+        },
+        {
+          "section": "Lunar symbolism and imagery",
+          "supporting_note": "The source discusses lunar cycles and the rabbit inside a vessel with water glyphs. Its claims about lunar influence are preserved as source statements.",
+          "printed_pages": [
+            122
+          ]
+        },
+        {
+          "section": "Pleasure and moderation",
+          "supporting_note": "The source connects procreation with pleasure and describes excess as vice.",
+          "printed_pages": [
+            122
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The reading makes fertility conditional on other calendrical elements and also describes intellectual creativity, artistic work, and caution about excess.",
+          "printed_pages": [
+            123
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 20 of the Borgia Codex and the Stone of the Suns.",
+          "printed_pages": [
+            122,
+            123
+          ]
+        },
+        {
+          "section": "Ruling association",
+          "supporting_note": "The lunar discussion is not presented under an explicit ruling-figure heading.",
+          "printed_pages": [
+            122,
+            123
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Rabbit, lunar vessel, water signs, fertility, pleasure, and moderation are on page 122. Pulque and year-bearing roles come from existing core and context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tochtli.en.md",
+            "printed_pages": [
+              122
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.8, Tochtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tochtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Rabbit name comes from page 122; long-eared head comes from existing glyph description. Curved vessel surrounding rabbit is described on page 122.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tochtli.en.md",
+            "printed_pages": [
+              122
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.8, Tochtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tochtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Fertility, lunar imagery, enjoyment, and moderation are supported by page 122. Maguey and pulque context comes from existing editorial material.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tochtli.en.md",
+            "printed_pages": [
+              122
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.8, Tochtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tochtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Centzon Totochtin, pulque, and year-bearing signs are retained from existing context and core symbolism. The earlier scans have no Tochtli entry.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tochtli.en.md",
+            "printed_pages": [
+              122,
+              123
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.8, Tochtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tochtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Mayahuel",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Earlier day-sign entry absent. Lunar rabbit mentions elsewhere are contextual only, not a recovered missing entry. Newer pages 122–123 provide actual rabbit text. Omitted gestation/lunar-period equivalence and generalized lunar control of fertility, sap, blood or brain activity."
+      ]
+    },
+    "atl": {
+      "name": "Atl",
+      "english": "Water",
+      "position": 9,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/atl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/atl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        123,
+        124
+      ],
+      "earlier_printed_pages": [],
+      "earlier_coverage": "absent",
+      "newer_section_notes": [
+        {
+          "section": "Natural description",
+          "supporting_note": "The source quotes water's locations, changing container shapes, absorption, refreshment, sound, irrigation, and force.",
+          "printed_pages": [
+            123
+          ]
+        },
+        {
+          "section": "Adaptation and sustenance",
+          "supporting_note": "The source associates water with adaptability, fertility, life, purification, travel, and the water jewels of Mother Earth.",
+          "printed_pages": [
+            123,
+            124
+          ]
+        },
+        {
+          "section": "Glyphs and named concepts",
+          "supporting_note": "The source discusses the water fret, blood imagery, atlachinolli, and the study of running waters by wise people of the rank of Quetzalcoatl. It has no separate ruler heading.",
+          "printed_pages": [
+            124
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes strength, patience, adaptability, transparent action, and influence through suggestion to birth under Atl.",
+          "printed_pages": [
+            124
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "Captions identify plate 18 of the Borgia Codex and the Stone of the Suns.",
+          "printed_pages": [
+            123,
+            124
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Vessel shape, channel, lake, thirst, irrigation, still-water mirror, torrent, and persistence are on page 123. Travel is on pages 123–124; central Mexican lake context is in existing material.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/atl.en.md",
+            "printed_pages": [
+              123,
+              124
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.9, Atl",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/atl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Water name and curling fret are on pages 123–124. Blue streams with shell/jewel-like elements come from existing glyph description. Distinction from rain is lexical/contextual, not a patron mapping.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/atl.en.md",
+            "printed_pages": [
+              123,
+              124
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.9, Atl",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/atl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Adaptation, cleansing, mirrors, eroding force, and precious water ornaments are on pages 123–124. These are material images and symbolic comparisons, without birth claims.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/atl.en.md",
+            "printed_pages": [
+              123,
+              124
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.9, Atl",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/atl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Managed Tenochtitlan lake environment and named water-associated figures come from existing context. Newer pages 123–124 support irrigation, rivers, travel, and water use.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/atl.en.md",
+            "printed_pages": [
+              123,
+              124
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.9, Atl",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/atl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Xiuhtecuhtli",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Earlier day-sign entry absent. Water discussions elsewhere do not replace it. Newer pages 123–124 provide actual entry. Omitted influence upon others' minds and word-derived scientific claims. Broad water deities are not assigned as universal day patrons."
+      ]
+    },
+    "itzcuintli": {
+      "name": "Itzcuintli",
+      "english": "Dog",
+      "position": 10,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/itzcuintli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/itzcuintli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        124,
+        125
+      ],
+      "earlier_printed_pages": [],
+      "earlier_coverage": "absent",
+      "newer_section_notes": [
+        {
+          "section": "Name and natural description",
+          "supporting_note": "The source describes a pre-Hispanic dog variety and quotes accounts of companionship, defense, wandering, and behavior.",
+          "printed_pages": [
+            124
+          ]
+        },
+        {
+          "section": "Historical context and varieties",
+          "supporting_note": "The passage discusses dogs as food, surviving specimens, western representations, the generic name chichi, and other named varieties.",
+          "printed_pages": [
+            124,
+            125
+          ]
+        },
+        {
+          "section": "Codex imagery",
+          "supporting_note": "The source describes gray fur with a dark eye patch, or white bodies with black spots, as drawn in codices.",
+          "printed_pages": [
+            125
+          ]
+        },
+        {
+          "section": "Loyalty and the journey to Mictlan",
+          "supporting_note": "The source quotes loyalty to loved ones and homeland, then recounts the dog accompanying the dead. Mictlan is a destination in the account, not a stated patron.",
+          "printed_pages": [
+            125
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source cites Sahagún's favorable judgment and Durán's description of generosity and willingness to grant favors.",
+          "printed_pages": [
+            125
+          ]
+        },
+        {
+          "section": "Illustration references and ruling association",
+          "supporting_note": "Captions identify plate 13 of the Borgia Codex and the Stone of the Suns. This entry has no explicit ruling-figure subsection.",
+          "printed_pages": [
+            124,
+            125
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Household companionship, walking to fields and hills, and return appear on page 124. Page 125 and existing context support the journey to Mictlan, including water crossing in the existing draft.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/itzcuintli.en.md",
+            "printed_pages": [
+              124,
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.10, Itzcuintli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/itzcuintli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Dog head is in existing Quick reference; eye patch and spotting are described on page 125. Dog remains the canonical broad label, without adopting the source breed taxonomy.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/itzcuintli.en.md",
+            "printed_pages": [
+              124,
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.10, Itzcuintli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/itzcuintli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Companionship and loyalty are on pages 124–125. Helper of the dead and crossing water toward Mictlan come from existing context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/itzcuintli.en.md",
+            "printed_pages": [
+              124,
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.10, Itzcuintli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/itzcuintli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Food use appears on page 124; mortuary accompaniment on page 125. Burial-associated dog representations are retained from the existing cultural discussion rather than generalized to every burial.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/itzcuintli.en.md",
+            "printed_pages": [
+              124,
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.10, Itzcuintli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/itzcuintli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Mictlantecuhtli",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Earlier day-sign entry absent. Xolotl's companion dog elsewhere does not recover its wording or establish its patron. Newer pages 124–125 provide actual entry. Omitted questionable classification of tepezcuintli as a dog variety, claims about surviving breeds, and a universal statement that every person was buried with a dog."
+      ]
+    },
+    "ozomahtli": {
+      "name": "Ozomahtli",
+      "english": "Monkey",
+      "position": 11,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/ozomahtli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/ozomahtli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        125,
+        126
+      ],
+      "earlier_printed_pages": [],
+      "earlier_coverage": "absent",
+      "newer_section_notes": [
+        {
+          "section": "Name and natural description",
+          "supporting_note": "The source identifies the monkey, describes the spider monkey, and recounts merchant transport and household keeping in Tenochtitlan and Tetzcuco.",
+          "printed_pages": [
+            125
+          ]
+        },
+        {
+          "section": "Movement and symbolism",
+          "supporting_note": "The source connects the monkey's grace and agility with amusement and joy. It then associates the sign with feminine sensuality and cyclical bodily activity.",
+          "printed_pages": [
+            125,
+            126
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes cheerfulness, wit, sensuality, and some superficiality to birth under this sign. These are its character claims.",
+          "printed_pages": [
+            126
+          ]
+        },
+        {
+          "section": "Testimonies and captions",
+          "supporting_note": "A reported description of monkeys, a quotation attributed to Durán, and captions identifying Borgia Codex plate 13 and the Stone of the Suns accompany the entry.",
+          "printed_pages": [
+            125,
+            126
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Monkey, spider monkey, branch movement, agility and amusement are on page 125. Music, dance, performance and artistry are supported by existing core/context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ozomahtli.en.md",
+            "printed_pages": [
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.11, Ozomahtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ozomahtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Monkey identity and spider-monkey example are on page 125. Monkey head comes from the existing glyph description. Whole-body pose is a general pictorial description, not an attribution to one plate.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ozomahtli.en.md",
+            "printed_pages": [
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.11, Ozomahtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ozomahtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Page 125 connects agility with amusement and joy. Existing core/context supplies musical performance and the related sphere of Xochipilli.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ozomahtli.en.md",
+            "printed_pages": [
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.11, Ozomahtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ozomahtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Page 125 describes merchant caravans, monkeys brought to the highlands, and household keeping in Tenochtitlan and Tetzcuco. Existing context supports ceremonial performance and arts.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ozomahtli.en.md",
+            "printed_pages": [
+              125
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.11, Ozomahtli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ozomahtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Xochipili",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Earlier day-sign entry absent. Newer pages 125–126 provide actual entry. Omitted hormonal/sexual claims, gender stereotypes and birth traits. Existing Cihuateteo account concerns Ce Ozomahtli and its trecena; it is not applied to every Monkey day."
+      ]
+    },
+    "malinalli": {
+      "name": "Malinalli",
+      "english": "Grass",
+      "position": 12,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/malinalli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/malinalli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        126,
+        127
+      ],
+      "earlier_printed_pages": [],
+      "earlier_coverage": "absent",
+      "newer_section_notes": [
+        {
+          "section": "Name, plant, and practical uses",
+          "supporting_note": "The source identifies the twelfth sign, gives descriptions of charcoal-maker's grass, and discusses twisting or weaving the leaves into useful objects.",
+          "printed_pages": [
+            126
+          ]
+        },
+        {
+          "section": "Glyph imagery",
+          "supporting_note": "The source describes elongated leaves and flowering spikes, followed by variants in which the plant emerges from a fleshless jaw or the jaw appears alone.",
+          "printed_pages": [
+            126,
+            127
+          ]
+        },
+        {
+          "section": "Renewal and comparison with Miquiztli",
+          "supporting_note": "The source compares renewal through rest with the grass's seasonal drying and return. A Durán quotation accompanies that comparison.",
+          "printed_pages": [
+            127
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes interest in medicinal plants, self-evaluation, and continual personal renewal to birth under this sign.",
+          "printed_pages": [
+            127
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "The captions identify Malinalli in Borgia Codex plates 56 and 19.",
+          "printed_pages": [
+            126,
+            127
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Long leaves, twisting, weaving, seasonal growth and dry intervals appear on pages 126–127. Fleshless jaw glyph appears on page 127.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/malinalli.en.md",
+            "printed_pages": [
+              126,
+              127
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.12, Malinalli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/malinalli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Grass/twisted grass from existing draft and newer page 126. Leaf/spike and jaw variations are explicitly described on pages 126–127.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/malinalli.en.md",
+            "printed_pages": [
+              126,
+              127
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.12, Malinalli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/malinalli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Seasonal drying, becoming part of the earth and renewed growth are on page 127. Useful twisted or woven leaves are on page 126.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/malinalli.en.md",
+            "printed_pages": [
+              126,
+              127
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.12, Malinalli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/malinalli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Practical bindings and plant material are on page 126 and in existing cultural context. Relationship with Miquiztli and renewal is on page 127 and the earlier limited cross-reference on page 78.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/malinalli.en.md",
+            "printed_pages": [
+              126,
+              127
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.12, Malinalli",
+            "printed_pages": [],
+            "coverage": "absent",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/malinalli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Patecatl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Earlier independent entry absent. Only a limited annual-grass/renewal cross-reference survives under Miquiztli on page 78. Newer pages 126–127 provide the plant, practical uses, jaw glyph and renewal discussion. Omitted birth-linked medicinal aptitude and any claim that transformation is the literal dictionary meaning."
+      ]
+    },
+    "acatl": {
+      "name": "Acatl",
+      "english": "Reed",
+      "position": 13,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/acatl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/acatl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        127,
+        128
+      ],
+      "earlier_printed_pages": [
+        97
+      ],
+      "earlier_coverage": "partial",
+      "newer_section_notes": [
+        {
+          "section": "Name and material uses",
+          "supporting_note": "The source distinguishes reed from cane and reports uses for reeds and otate in flutes, arrows, spears, and fire making.",
+          "printed_pages": [
+            127
+          ]
+        },
+        {
+          "section": "Solar symbolism and named concepts",
+          "supporting_note": "The source associates the reed with solar heat and discusses Ce-acatl Quetzalcoatl and Ome-acatl Tezcatlipoca. These are named contexts in the passage, not a separate ruler heading.",
+          "printed_pages": [
+            127,
+            128
+          ]
+        },
+        {
+          "section": "Glyph forms and ceremonial fire",
+          "supporting_note": "The source contrasts Mexica reed-clump imagery with Mixtec reed bundles and arrowheads, then describes the vertical fire-making element and its adornments.",
+          "printed_pages": [
+            128
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes analytical intelligence, focused objectives, frankness, and emotional reserve to birth under Acatl. It also quotes Durán's hollow-reed comparison.",
+          "printed_pages": [
+            128
+          ]
+        },
+        {
+          "section": "Illustration references",
+          "supporting_note": "The captions identify Acatl in Borgia Codex plate 12 and on the Stone of the Suns.",
+          "printed_pages": [
+            127,
+            128
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Reed, damp ground, flutes, shafts, dart bundles, and fire-making imagery occur on pages 127–128. Year-bearing and historical dates come from existing context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/acatl.en.md",
+            "printed_pages": [
+              127,
+              128
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.13, Acatl",
+            "printed_pages": [
+              97
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/acatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Reed meaning on page 127; growing clump, bundle with arrowheads, and down/cotton adornments are on page 128. Year-bearing role comes from existing draft.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/acatl.en.md",
+            "printed_pages": [
+              127,
+              128
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.13, Acatl",
+            "printed_pages": [
+              97
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/acatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Straight reed and flute on page 127. Directed dart and ceremonial fire imagery on page 128. These are symbolic comparisons, not scientific claims about solar energy.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/acatl.en.md",
+            "printed_pages": [
+              127,
+              128
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.13, Acatl",
+            "printed_pages": [
+              97
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/acatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Wetland materials, Ce Acatl Topiltzin Quetzalcoatl and four year-bearing signs come from existing context. Later narratives are kept as named associations, without declaring a historical chronology.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/acatl.en.md",
+            "printed_pages": [
+              127,
+              128
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.13, Acatl",
+            "printed_pages": [
+              97
+            ],
+            "coverage": "partial",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/acatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Tezcatlipoca",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Earlier entry is partial, closing discussion and Tonalpohualli on page 97; opening and actual ruler heading absent. Tezcatlipoca context is visible but a heading cannot be reconstructed. Newer pages 127–128 provide complete reed text. Omitted bioenergy claims and human emotional diagnoses based on hollow stems."
+      ]
+    },
+    "ocelotl": {
+      "name": "Ocelotl",
+      "english": "Jaguar",
+      "position": 14,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/ocelotl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/ocelotl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        128,
+        129
+      ],
+      "earlier_printed_pages": [
+        98,
+        99,
+        100
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Name and animal identification",
+          "supporting_note": "The source disputes the translations tiger and jaguar and identifies the animal as the ocelot. That source identification remains distinct from the record's navigation label.",
+          "printed_pages": [
+            128
+          ]
+        },
+        {
+          "section": "Hunting and flowering imagery",
+          "supporting_note": "The source describes cautious hunting and a spotted coat, then compares successful undertakings with flowers added to the coat.",
+          "printed_pages": [
+            128,
+            129
+          ]
+        },
+        {
+          "section": "Night sky, earth interior, and named figures",
+          "supporting_note": "The source places the starry sky and the earth's interior within its Tezcatlipoca discussion and describes Tepeyolohtli and Ocelotonatiuh. It does not give a separate ruler heading here.",
+          "printed_pages": [
+            129
+          ]
+        },
+        {
+          "section": "Historical and social context",
+          "supporting_note": "The source discusses the Olmec nagual, ocelot and eagle warrior orders, a comparison with Cipactli, and southeastern tales about crocodilians and felines.",
+          "printed_pages": [
+            129
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes careful planning, determination, responsibility, social presence, and the ability to guide others to birth under this sign.",
+          "printed_pages": [
+            129
+          ]
+        },
+        {
+          "section": "Testimony and captions",
+          "supporting_note": "The entry includes a reported animal description and captions for Nuttall Codex plate 66 and the Stone of the Suns.",
+          "printed_pages": [
+            128,
+            129
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Canonical Jaguar retained. Quiet hunting and spotted coat appear on pages 128–129; night sky, earth interior, Tepeyolohtli, and warrior context are on page 129 and earlier pages 98–100.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ocelotl.en.md",
+            "printed_pages": [
+              128,
+              129
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.14, Ocelotl",
+            "printed_pages": [
+              98,
+              99,
+              100
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ocelotl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Conventional Jaguar label and spotted feline head come from existing draft and canonical snapshot. Newer zoological disagreement is recorded below, not silently reconciled.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ocelotl.en.md",
+            "printed_pages": [
+              128,
+              129
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.14, Ocelotl",
+            "printed_pages": [
+              98,
+              99,
+              100
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ocelotl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Starry sky and mountain/cave interior appear on page 129 and earlier meaning passage. Predator strength is in both translated descriptions and existing symbolism.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ocelotl.en.md",
+            "printed_pages": [
+              129
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.14, Ocelotl",
+            "printed_pages": [
+              98,
+              99,
+              100
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ocelotl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Wide sacred/royal/martial uses come from existing context. Tepeyolohtli, Sun of Jaguar and paired eagle/feline warrior imagery appear in both translated meaning passages.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ocelotl.en.md",
+            "printed_pages": [
+              129
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.14, Ocelotl",
+            "printed_pages": [
+              98,
+              99,
+              100
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ocelotl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Tlazolteotl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Animal identification disagreement. Canonical record and existing draft use Jaguar. The newer page 128 explicitly rejects tiger/jaguar and identifies ocelot; the earlier reference describes the shifts among jaguar, tiger and ocelote on pages 98–100. Display preserves canonical Jaguar and uses broad spotted-feline imagery without claiming the dispute resolved. Omitted single-origin Olmec cultural diffusion and zoological combat absolutes. Earlier Tlazohteotl heading and separate Tlazolteotl spellings are preserved in source records and not conflated."
+      ]
+    },
+    "cuauhtli": {
+      "name": "Cuauhtli",
+      "english": "Eagle",
+      "position": 15,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/cuauhtli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/cuauhtli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        130
+      ],
+      "earlier_printed_pages": [
+        100,
+        101,
+        102
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Natural description and testimony",
+          "supporting_note": "The source reports the eagle's high flight, strength, vision, and impulsive hunting, including its own claim about looking at the Sun.",
+          "printed_pages": [
+            130
+          ]
+        },
+        {
+          "section": "Solar symbolism",
+          "supporting_note": "The source identifies the eagle as Tonatiuh's nagual at full maturity and relates it to solar strength, height, freedom, and majestic bearing.",
+          "printed_pages": [
+            130
+          ]
+        },
+        {
+          "section": "Warrior and emblem context",
+          "supporting_note": "The source describes eagle plumage in warrior attire, its relation to the ocelot warrior order, and its use as an emblem.",
+          "printed_pages": [
+            130
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes tenacity, impulsiveness, determination, keen vision, and a desire for freedom to birth under Cuauhtli. A Durán quotation compares it with the preceding feline sign.",
+          "printed_pages": [
+            130
+          ]
+        },
+        {
+          "section": "Illustration reference",
+          "supporting_note": "The caption identifies Cuauhtli in the Nuttall Codex.",
+          "printed_pages": [
+            130
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "High flight, sight, mountain nesting, solar imagery, plumage and warriors appear on page 130 and earlier pages 100–102. Foundation narrative comes from existing draft.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuauhtli.en.md",
+            "printed_pages": [
+              130
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.15, Cuauhtli",
+            "printed_pages": [
+              100,
+              101,
+              102
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Eagle head and hooked beak are in existing glyph description. Eagle name is in both translations. Posture/wing description is general visual interpretation, not a named plate transcription.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuauhtli.en.md",
+            "printed_pages": [
+              130
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.15, Cuauhtli",
+            "printed_pages": [
+              100,
+              101,
+              102
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Sky, height, solar strength, vision, and martial authority appear in both translations and existing symbolism. No impossible safe Sun-gazing claim is retained.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuauhtli.en.md",
+            "printed_pages": [
+              130
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.15, Cuauhtli",
+            "printed_pages": [
+              100,
+              101,
+              102
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Eagle and jaguar warriors appear on page 130 and earlier meaning passage. Tenochtitlan foundation narrative and cactus are in existing cultural context; national emblem is mentioned on page 130.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cuauhtli.en.md",
+            "printed_pages": [
+              130
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.15, Cuauhtli",
+            "printed_pages": [
+              100,
+              101,
+              102
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Xipe Totec",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted claim that eagles can look directly at the Sun without injury, universal Uto-Aztecan emblem claim, and blanket legal punishment narrative in earlier Xipetotec discussion. Foundation narrative is separate from the literal meaning of any Eagle date."
+      ]
+    },
+    "cozcacuauhtli": {
+      "name": "Cozcacuauhtli",
+      "english": "Vulture",
+      "position": 16,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/cozcacuauhtli.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/cozcacuauhtli.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        131
+      ],
+      "earlier_printed_pages": [
+        102,
+        103,
+        104,
+        105
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Name and uncertain animal identification",
+          "supporting_note": "The source gives collared eagle as the literal translation but leaves the species unidentified. The testimony and chronicle labels concern vultures and related bird names.",
+          "printed_pages": [
+            131
+          ]
+        },
+        {
+          "section": "Feeding and practical use imagery",
+          "supporting_note": "The reported testimony describes scavenging and using what has died. The source connects that account with practical resourcefulness in its character reading.",
+          "printed_pages": [
+            131
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source quotes Durán's claims about longevity, health, counsel, authority, teaching, and advice, then adds skill in finding uses for discarded materials and ideas.",
+          "printed_pages": [
+            131
+          ]
+        },
+        {
+          "section": "Alternative calendar sign",
+          "supporting_note": "The source discusses de la Serna's Jalatlaco account, where a grinding slab, temetlatl, occupies the sixteenth position. This is an alternative sign account, not a ruling-figure assignment.",
+          "printed_pages": [
+            131
+          ]
+        },
+        {
+          "section": "Captions and quotations",
+          "supporting_note": "The entry includes captions for Borgia Codex plate 58 and the Stone of the Suns, plus testimony and quotations attributed to Durán and de la Serna.",
+          "printed_pages": [
+            131
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Bare neck and feather collar, circling descent and scavenging occur on page 131. Renewal and use of remains are ecological/editorial interpretations. Age association comes from existing symbolism and both attributed historical readings.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cozcacuauhtli.en.md",
+            "printed_pages": [
+              131
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.16, Cozcacuauhtli",
+            "printed_pages": [
+              102,
+              103,
+              104,
+              105
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cozcacuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Vulture label and king-vulture-like iconography come from existing draft. Collared eagle, unknown exact species and feather collar appear on page 131 and earlier pages 102–105.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cozcacuauhtli.en.md",
+            "printed_pages": [
+              131
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.16, Cozcacuauhtli",
+            "printed_pages": [
+              102,
+              103,
+              104,
+              105
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cozcacuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Scavenging and finding uses for remains are grounded in the page 131 testimony. Age/counsel comes from sign-linked historical interpretations, expressed here as associations rather than birth predictions.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cozcacuauhtli.en.md",
+            "printed_pages": [
+              131
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.16, Cozcacuauhtli",
+            "printed_pages": [
+              102,
+              103,
+              104,
+              105
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cozcacuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Scavenger environment and flight come from page 131. Regional variability is supported by the same page's alternative temetlatl account; no alternative sign is substituted into the canonical sequence.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/cozcacuauhtli.en.md",
+            "printed_pages": [
+              131
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.16, Cozcacuauhtli",
+            "printed_pages": [
+              102,
+              103,
+              104,
+              105
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/cozcacuauhtli.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Itzpapalotl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Exact species unresolved in both translations. Canonical Vulture remains; king-vulture comparison is a qualified iconographic comparison. Longevity and counsel are historical symbolic associations, not a lifespan or health prediction. Omitted gene/neuron activation, other-plane perception, and sex-specific capacities from earlier Itzpapalotl discussion. Alternative Jalatlaco Temetlatl remains an alternative account, not a replacement in the canonical list."
+      ]
+    },
+    "ollin": {
+      "name": "Ollin",
+      "english": "Movement",
+      "position": 17,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/ollin.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/ollin.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        132,
+        133
+      ],
+      "earlier_printed_pages": [
+        105,
+        106,
+        107,
+        108
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Meaning and reported testimony",
+          "supporting_note": "The source defines Ollin as movement and reports descriptions connecting movement, work, river currents, and being alive.",
+          "printed_pages": [
+            132
+          ]
+        },
+        {
+          "section": "Life, heart, blood, and rubber",
+          "supporting_note": "The source develops its account through yolli, yolotl, blood circulation, rubber, and the material used in the ballgame. Its word analyses remain part of the translated account.",
+          "printed_pages": [
+            132
+          ]
+        },
+        {
+          "section": "Solar and butterfly imagery",
+          "supporting_note": "The source relates movement to solar heat and light, butterfly imagery, thought, and the Purhépecha parákata day.",
+          "printed_pages": [
+            133
+          ]
+        },
+        {
+          "section": "Specific calendrical and institutional context",
+          "supporting_note": "The source discusses Nahui Ollin, Four Movement, its 260-day recurrence, and the preparation of wise people and warriors at named institutions. That date is a particular number-sign combination.",
+          "printed_pages": [
+            133
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes activity, restlessness, companionship, creativity, travel, and outward luminosity to birth under Ollin.",
+          "printed_pages": [
+            133
+          ]
+        },
+        {
+          "section": "Captions and historical quotations",
+          "supporting_note": "Captions identify Borgia Codex plate 21 and the Stone of the Suns. Quotations attributed to Durán and de la Serna concern character and solar movement.",
+          "printed_pages": [
+            132,
+            133
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Movement and heartbeat are on page 132; solar associations on page 133 and earlier meaning section. Nahui Ollin as current cosmic era and Sun Stone central image come from existing core/app text.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ollin.en.md",
+            "printed_pages": [
+              132,
+              133
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.17, Ollin",
+            "printed_pages": [
+              105,
+              106,
+              107,
+              108
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ollin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Movement meaning comes from page 132. Interlaced or lobed abstract glyph comes from existing Quick reference. Earthquake is a manifestation rather than an exhaustive translation.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ollin.en.md",
+            "printed_pages": [
+              132,
+              133
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.17, Ollin",
+            "printed_pages": [
+              105,
+              106,
+              107,
+              108
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ollin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Life/movement, heart and water examples occur on page 132; solar and butterfly images on page 133. No unsupported molecular, etymological or astronomical causal claim is imported.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ollin.en.md",
+            "printed_pages": [
+              132,
+              133
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.17, Ollin",
+            "printed_pages": [
+              105,
+              106,
+              107,
+              108
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ollin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Current era, earlier eras, and Sun Stone are supported by existing core/app material. Different numeral combinations describe the calendar rather than extending specific Four Movement institutional claims.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/ollin.en.md",
+            "printed_pages": [
+              133
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.17, Ollin",
+            "printed_pages": [
+              105,
+              106,
+              107,
+              108
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/ollin.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Xolotl",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Movement is broader than earthquake. Nahui Ollin is a specific numeral-sign combination and cosmic-era name. Omitted claimed solar phenomena and institutional graduation practices generalized to every Movement day, and unverified etymological/physical explanations of rubber and universal vibration. Existing cultural context field was empty; new context derives from existing core/app discussion and translated motion imagery."
+      ]
+    },
+    "tecpatl": {
+      "name": "Tecpatl",
+      "english": "Flint",
+      "position": 18,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/tecpatl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/tecpatl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        134,
+        135
+      ],
+      "earlier_printed_pages": [
+        108,
+        109,
+        110
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Name, materials, and uses",
+          "supporting_note": "The source identifies a flint knife and discusses hard-stone blades, obsidian, fire making, domestic and industrial uses, and surgical instruments. Its material terms remain as written.",
+          "printed_pages": [
+            134
+          ]
+        },
+        {
+          "section": "Light, sparks, and analytical inquiry",
+          "supporting_note": "The source compares sparks with ideas and cutting inward with methodical analysis. It contrasts these ideas with fleeting thoughts in its discussion of Itzpapalotl.",
+          "printed_pages": [
+            134
+          ]
+        },
+        {
+          "section": "Cold-season imagery",
+          "supporting_note": "The source also associates Tecpatl with intense cold and describes wind armed with cutting obsidian knives.",
+          "printed_pages": [
+            134
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes mental sharpness, curiosity about origins, study, and warmth perceived after acquaintance to birth under this sign. The sentence continues across the page boundary.",
+          "printed_pages": [
+            134,
+            135
+          ]
+        },
+        {
+          "section": "Testimony and caption",
+          "supporting_note": "The entry includes reported testimony about flint blades, sparks, and ideas, plus a Stone of the Suns caption.",
+          "printed_pages": [
+            134
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Flint knife, stone tool, sparks and inquiry are on page 134 and earlier pages 108–110. Personified ritual knives and year-bearing role come from existing context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tecpatl.en.md",
+            "printed_pages": [
+              134
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.18, Tecpatl",
+            "printed_pages": [
+              108,
+              109,
+              110
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tecpatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Flint/blade lexical meaning is on page 134. Pointed/chipped and personified knives come from existing glyph/context; material distinction is maintained rather than conflating obsidian and flint.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tecpatl.en.md",
+            "printed_pages": [
+              134
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.18, Tecpatl",
+            "printed_pages": [
+              108,
+              109,
+              110
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tecpatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Cutting inward as analysis, spark as idea, and cold wind as blade are explicit metaphors on page 134 and earlier meaning passage. Sacred agency comes from existing context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tecpatl.en.md",
+            "printed_pages": [
+              134
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.18, Tecpatl",
+            "printed_pages": [
+              108,
+              109,
+              110
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tecpatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Practical and ceremonial blades and personified sacrificial knives are supported by existing context and page 134. Four year signs come from existing calendrical notes. No conflicting patron is named.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/tecpatl.en.md",
+            "printed_pages": [
+              134
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.18, Tecpatl",
+            "printed_pages": [
+              108,
+              109,
+              110
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/tecpatl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Chalchihuihtotolin",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Patron mismatch deliberately unresolved. Earlier reference pages 108–110 has Regente Chalchiuhtotolin; existing draft gives Chalchihuihtotolin as a source-specific spelling; newer day-sign companion table on printed page 173 assigns Chalchiuhtlicue to Tecpatl. Newer pages 134–135 have no separate ruler heading. Display omits a Tecpatl patron. Flint and obsidian are distinct materials; source material shifts are not treated as geological equivalence. Omitted surgical specialist transcription, unsupported fire-making technical claims and historical warrior rank assertions."
+      ]
+    },
+    "quiahuitl": {
+      "name": "Quiahuitl",
+      "english": "Rain",
+      "position": 19,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/quiahuitl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/quiahuitl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        135,
+        136
+      ],
+      "earlier_printed_pages": [
+        110,
+        111,
+        112
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Rain and nourishment",
+          "supporting_note": "The source describes rain as the liquid the earth drinks and reports its role in crops, river water, and relief from drought.",
+          "printed_pages": [
+            135
+          ]
+        },
+        {
+          "section": "Weather forms and storm account",
+          "supporting_note": "The source describes gentle moisture and violent downpours, then recounts the tlaloqueh breaking clay vessels to release rain and produce storm flashes.",
+          "printed_pages": [
+            135
+          ]
+        },
+        {
+          "section": "Tlaloc-related glyph imagery",
+          "supporting_note": "The source describes the ringed eye and profile face, explaining how two facing rain signs form Tlaloc's face. This is imagery in the passage, not a separate ruler heading.",
+          "printed_pages": [
+            135
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes imagination and shifts between calm, fury, determined action, and passivity to birth under Quiahuitl. It discusses centering those extremes.",
+          "printed_pages": [
+            136
+          ]
+        },
+        {
+          "section": "Captions and historical quotation",
+          "supporting_note": "Captions identify Tlaloc representing the Quiahuitl day in Borgia Codex plate 19 and Quiahuitl on the Stone of the Suns. The next page quotes de la Serna's description of a downpour.",
+          "printed_pages": [
+            135,
+            136
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Rain, germination, hail and downpours, ringed eye profile, Tlaloc imagery and Tlaloque vessel story are on page 135 and earlier pages 110–112.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/quiahuitl.en.md",
+            "printed_pages": [
+              135
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.19, Quiahuitl",
+            "printed_pages": [
+              110,
+              111,
+              112
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/quiahuitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Rain/downpour, ringed eye profile and two facing glyphs making Tlaloc face are described on pages 135–136 and earlier meaning section. This is image association, not ruler assignment.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/quiahuitl.en.md",
+            "printed_pages": [
+              135,
+              136
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.19, Quiahuitl",
+            "printed_pages": [
+              110,
+              111,
+              112
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/quiahuitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Germination, nourishment, dangerous storms/hail, and uncertainty of rainfall come from page 135 and existing core/context. Sky-to-soil relationship is editorial synthesis.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/quiahuitl.en.md",
+            "printed_pages": [
+              135
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.19, Quiahuitl",
+            "printed_pages": [
+              110,
+              111,
+              112
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/quiahuitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Agriculture, mountains, caves, springs, Tlaloc and Tlaloque come from existing context. Broken rain vessels are described on page 135 as a story, without treating it as meteorological explanation.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/quiahuitl.en.md",
+            "printed_pages": [
+              135
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.19, Quiahuitl",
+            "printed_pages": [
+              110,
+              111,
+              112
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/quiahuitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Tonatiuh",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Tlaloc-related face and rain mythology do not establish a universal sign patron. Earlier explicit Regente is Tonatiuh on pages 110–112; newer entry has no ruler heading. Omitted frost-as-early-rain and source meteorological assertions. Vessel fragments causing electrical flashes remain a story, not physical explanation."
+      ]
+    },
+    "xochitl": {
+      "name": "Xochitl",
+      "english": "Flower",
+      "position": 20,
+      "local_source_paths": [
+        "content/calendar/new-source/day-signs/xochitl.en.md",
+        "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+        "tonalpohualli_day_signs_content/xochitl.md",
+        "content/calendar/SOURCE_NOTES.md"
+      ],
+      "newer_printed_pages": [
+        136,
+        137
+      ],
+      "earlier_printed_pages": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "earlier_coverage": "complete visible section sequence",
+      "newer_section_notes": [
+        {
+          "section": "Position and testimony",
+          "supporting_note": "The source identifies Flower as the final day sign and includes reported comparisons of flowers with beauty, fragrance, songs, work, and completed tasks.",
+          "printed_pages": [
+            136
+          ]
+        },
+        {
+          "section": "Flowering and accomplishment",
+          "supporting_note": "The source presents flowering as an image for positive qualities, thoughts, expressions, activity, and the satisfactory completion of aims.",
+          "printed_pages": [
+            136,
+            137
+          ]
+        },
+        {
+          "section": "Artistic expression",
+          "supporting_note": "The source relates sensitivity and the sharing of feeling through poetry, song, music, dance, painting, and the phrase flower and song.",
+          "printed_pages": [
+            137
+          ]
+        },
+        {
+          "section": "Attributed character reading",
+          "supporting_note": "The source attributes creativity, subtlety, steady purpose, clear speech, and enduring will to people associated with Xochitl, using flowering and fruitfulness as its comparisons.",
+          "printed_pages": [
+            136,
+            137
+          ]
+        },
+        {
+          "section": "Illustration reference",
+          "supporting_note": "The caption identifies Xochitl in Bodley Codex plate 33.",
+          "printed_pages": [
+            136
+          ]
+        }
+      ],
+      "section_support": {
+        "description": {
+          "supporting_notes": "Final position, color/fragrance, fruit, work as flowering, art and flower-and-song occur on pages 136–137 and earlier pages 112–115. Offerings come from existing context.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/xochitl.en.md",
+            "printed_pages": [
+              136,
+              137
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.20, Xochitl",
+            "printed_pages": [
+              112,
+              113,
+              114,
+              115
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/xochitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "meaning_and_glyph": {
+          "supporting_notes": "Flower meaning and last position occur on page 136. Stylized blossom comes from existing Quick reference. Petals/center are general visual details without claiming a specific plant species.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/xochitl.en.md",
+            "printed_pages": [
+              136
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.20, Xochitl",
+            "printed_pages": [
+              112,
+              113,
+              114,
+              115
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/xochitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "symbolism": {
+          "supporting_notes": "Beauty, fruit, completion of work and positive flowering appear on pages 136–137. Artistic preciousness is in existing context. Final-position/return relationship is editorial synthesis, not an invented developmental program for all twenty signs.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/xochitl.en.md",
+            "printed_pages": [
+              136,
+              137
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.20, Xochitl",
+            "printed_pages": [
+              112,
+              113,
+              114,
+              115
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/xochitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        },
+        "cultural_context": {
+          "supporting_notes": "Offerings, adornment, flower and song, Xochiquetzal and Xochipilli come from existing context. The earlier Xochiquetzalli subsection supplies additional arts context, without normalizing its spelling into a universal patron claim.",
+          "newer_source": {
+            "path": "content/calendar/new-source/day-signs/xochitl.en.md",
+            "printed_pages": [
+              136,
+              137
+            ],
+            "locator": "Full English translation, Printed page headings"
+          },
+          "earlier_source": {
+            "path": "books/ENGLISH_TRANSLATIONS_AND_SYMBOL_REFERENCE.md",
+            "locator": "Section 5.20, Xochitl",
+            "printed_pages": [
+              112,
+              113,
+              114,
+              115
+            ],
+            "coverage": "complete visible section sequence",
+            "scope_note": "Entry-level visible page range. A narrower page split is not established by this condensed reference."
+          },
+          "existing_editorial": {
+            "path": "tonalpohualli_day_signs_content/xochitl.md",
+            "locators": [
+              "Quick reference",
+              "Literal meaning and glyph",
+              "Core meanings and symbolism",
+              "Cultural and historical context"
+            ],
+            "printed_pages": null,
+            "scope_note": "Local heading support only. Underlying external-publication pages are not supplied by the draft."
+          }
+        }
+      },
+      "existing_source_specific_patron": {
+        "name": "Xochiquetzal",
+        "source": "AztecCalendar.com as recorded in the existing local draft; not independently verified in this editorial pass",
+        "display_policy": "Not imported as a universal ruler"
+      },
+      "uncertainties_and_omissions": [
+        "Omitted gendered seduction claims and birth-based artistic diagnoses. Earlier heading spells Xochiquetzalli, while existing draft uses Xochiquetzal. These are not silently normalized into a single universal patron record. Flower and song is retained as a cultural expression; no new Nahuatl poetic translation is supplied."
+      ]
+    }
+  }
+}

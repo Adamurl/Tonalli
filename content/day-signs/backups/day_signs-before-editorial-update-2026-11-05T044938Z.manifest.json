@@ -1,0 +1,24 @@
+{
+  "backup_file": "day_signs-before-editorial-update-2026-11-05T044938Z.csv",
+  "backup_sha256": "736168f7fa6284bec3f3a7a65f2627a0921c39af0949f6425cf4c3c0244e678b",
+  "row_count": 20,
+  "columns": [
+    "name",
+    "english",
+    "position",
+    "literal_meaning_and_glyph",
+    "core_meanings_and_symbolism",
+    "cultural_and_historical_context",
+    "app_safe_description"
+  ],
+  "encoding": "UTF-8",
+  "csv_null_policy": "No source values were null. Empty fields preserve empty strings. Position is an integer.",
+  "update_status": "applied_and_verified",
+  "project_ref": "yoeyjhcggjbroooivawf",
+  "prepared_records": "../records.json",
+  "applied_at_utc": "2026-11-05T04:50:10.679476+00:00",
+  "verified_content_field_count": 80,
+  "identity_preserved": true,
+  "method": "Supabase CLI 3.0.0 db query --remote, one guarded transaction",
+  "record_sha256": "f5e5c7b0738889e022c025557076d2508ebb5f836fe3cc540709b76c79bf4df4"
+}

@@ -14,6 +14,14 @@ Its current anchor is March 12, 2022 at 6:43 a.m. Mexico City time: 10 Tochtli,
 - `backend/sql/veintenas.sql` creates and seeds the public veintena reference table.
 - `backend/requirements.txt` lists the backend dependencies.
 - `frontend/` contains the Next.js calendar home screen and glyph assets.
+- `content/day-signs/` contains the twenty editorial website records, a readable
+  preview, and source provenance. The records fit the current seven-column
+  day-sign table. `backend/scripts/prepare_day_sign_content.py` validates them
+  and generates `backend/sql/day_sign_content.sql` for review before import.
+- `content/calendar/README.md` indexes both retained English source records.
+  `content/calendar/new-source/` groups the new translation by day sign, number,
+  and broader subject, with section notes and printed-page references. This
+  content has not been imported into Supabase or connected to the frontend.
 
 ## Run the API
 

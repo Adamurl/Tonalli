@@ -1,0 +1,2 @@
+content/day-signs/*.csv -text whitespace=cr-at-eol
+content/day-signs/backups/*.csv -text whitespace=cr-at-eol

@@ -1,0 +1,29 @@
+{
+  "backup_file": "day_signs-before-column-rename-2026-11-05T045902Z.csv",
+  "backup_sha256": "1965e140cec3e5ac5a71d738ff4dbeb06707eda383a10a6e69d021ed34174cc2",
+  "row_count": 20,
+  "columns": [
+    "name",
+    "english",
+    "position",
+    "literal_meaning_and_glyph",
+    "core_meanings_and_symbolism",
+    "cultural_and_historical_context",
+    "app_safe_description"
+  ],
+  "encoding": "UTF-8",
+  "csv_null_policy": "No null values. Empty fields retain empty strings; position is integer.",
+  "rename_status": "applied_and_verified",
+  "project_ref": "yoeyjhcggjbroooivawf",
+  "renamed_at_utc": "2026-11-05T05:01:46.002925+00:00",
+  "column_mapping": {
+    "app_safe_description": "description",
+    "literal_meaning_and_glyph": "meaning_and_glyph",
+    "core_meanings_and_symbolism": "symbolism",
+    "cultural_and_historical_context": "cultural_context"
+  },
+  "content_values_unchanged": true,
+  "verified_rows": 20,
+  "verified_content_fields": 80,
+  "migration": "backend/sql/rename_day_sign_content_columns.sql"
+}

@@ -1,0 +1,21 @@
+{
+  "backup_file": "day_signs-before-editorial-update-2026-11-05T044221Z.csv",
+  "backup_sha256": "736168f7fa6284bec3f3a7a65f2627a0921c39af0949f6425cf4c3c0244e678b",
+  "row_count": 20,
+  "columns": [
+    "name",
+    "english",
+    "position",
+    "literal_meaning_and_glyph",
+    "core_meanings_and_symbolism",
+    "cultural_and_historical_context",
+    "app_safe_description"
+  ],
+  "encoding": "UTF-8",
+  "csv_null_policy": "Export checked that no source value was null. Empty cells preserve empty strings. Position is an integer.",
+  "update_status": "not_applied",
+  "reason": "Bulk upsert rejected with HTTP 401 / PostgreSQL 42501 row-level security. A narrower PATCH returned zero writable rows. Read-back after each attempt exactly matched the original backup.",
+  "prepared_records": "../records.json",
+  "prepared_csv": "../day_signs-editorial.csv",
+  "verified_at_utc": "2026-11-05T04:43:51.923811+00:00"
+}
