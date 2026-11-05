@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
+import tonalliLogo from "../assets/Tonalli_Logo.png";
 import styles from "./SiteHeader.module.css";
 
 const navigationItems = ["Menu item 1", "Menu item 2", "Menu item 3", "Menu item 4"];
@@ -26,7 +28,7 @@ export function SiteHeader() {
     }
 
     function handlePointerDown(event: PointerEvent) {
-      if (!headerRef.current?.contains(event.target as Node)) {
+      if (event.target instanceof Node && !headerRef.current?.contains(event.target)) {
         setMenuOpen(false);
       }
     }
@@ -44,34 +46,35 @@ export function SiteHeader() {
       className={styles.header}
       ref={headerRef}
     >
-      <nav className={`${styles.desktopNavigation} glass-surface`} aria-label="Main navigation">
-        {navigationItems.map((item) => (
-          <span className={styles.navigationItem} key={item}>
-            {item}
+      <div className={`${styles.pill} glass-surface`}>
+        <a className={styles.wordmark} href="/" aria-label="Tonalli home">
+          <Image className={styles.logo} src={tonalliLogo} alt="Tonalli" sizes="80px" />
+        </a>
+        <nav className={styles.desktopNavigation} aria-label="Main navigation">
+          {navigationItems.map((item) => (
+            <span className={styles.navigationItem} key={item}>
+              {item}
+            </span>
+          ))}
+        </nav>
+
+        <button
+          className={styles.menuButton}
+          type="button"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setMenuOpen((open) => !open)}
+          ref={menuButtonRef}
+        >
+          <span className={styles.menuIcon} aria-hidden="true">
+            <span />
+            <span />
+            <span />
+            <span />
           </span>
-        ))}
-      </nav>
-
-      <button className={styles.downloadButton} type="button">
-        Download
-      </button>
-
-      <button
-        className={`${styles.menuButton} glass-surface`}
-        type="button"
-        aria-expanded={menuOpen}
-        aria-controls="mobile-navigation"
-        onClick={() => setMenuOpen((open) => !open)}
-        ref={menuButtonRef}
-      >
-        <span className={styles.menuIcon} aria-hidden="true">
-          <span />
-          <span />
-          <span />
-          <span />
-        </span>
-        <span>{menuOpen ? "Close" : "Menu"}</span>
-      </button>
+          <span>{menuOpen ? "Close" : "Menu"}</span>
+        </button>
+      </div>
 
       {menuOpen && (
         <div className={styles.menuLayer}>
@@ -87,11 +90,6 @@ export function SiteHeader() {
                 </li>
               ))}
             </ul>
-            <div className={styles.mobileNavigationFooter}>
-              <button className={styles.mobileDownloadButton} type="button">
-                Download
-              </button>
-            </div>
           </nav>
         </div>
       )}

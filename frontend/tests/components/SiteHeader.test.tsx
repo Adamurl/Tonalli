@@ -1,11 +1,11 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 
 import { SiteHeader } from "../../components/SiteHeader";
 
 describe("SiteHeader", () => {
-  it("shows desktop navigation and the Download action without a logo", () => {
+  it("shows the home logo and four desktop navigation labels", () => {
     render(<SiteHeader />);
 
     const desktopNavigation = screen.getByRole("navigation", {
@@ -13,12 +13,17 @@ describe("SiteHeader", () => {
     });
     expect(desktopNavigation).toHaveTextContent("Menu item 1");
     expect(desktopNavigation).toHaveTextContent("Menu item 4");
-    expect(screen.getByRole("button", { name: "Download" })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Download" })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Menu" })).toHaveAttribute(
       "aria-expanded",
       "false",
     );
-    expect(screen.queryByRole("link", { name: "Tonalli home" })).not.toBeInTheDocument();
+    const homeLink = screen.getByRole("link", { name: "Tonalli home" });
+    expect(homeLink).toHaveAttribute("href", "/");
+    expect(within(homeLink).getByRole("img", { name: "Tonalli" })).toHaveAttribute(
+      "src",
+      expect.stringContaining("/assets/Tonalli_Logo.png"),
+    );
   });
 
   it("opens the dropdown and closes it with Escape while restoring focus", async () => {
@@ -37,7 +42,7 @@ describe("SiteHeader", () => {
     });
     expect(mobileNavigation).toHaveTextContent("Menu item 1");
     expect(mobileNavigation).toHaveTextContent("Menu item 4");
-    expect(screen.getAllByRole("button", { name: "Download" })).toHaveLength(2);
+    expect(screen.getByRole("link", { name: "Tonalli home" })).toBeInTheDocument();
 
     await user.keyboard("{Escape}");
 
