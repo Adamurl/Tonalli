@@ -1,9 +1,10 @@
 "use client";
 
 import { motion, useMotionValueEvent, useReducedMotion, useScroll, useTransform } from "motion/react";
-import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { useCallback, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 import { DaySignArtwork, DaySignSection } from "./DaySignSection";
+import { SignStorySection } from "./SignStorySection";
 import type { CalendarDate } from "../lib/calendar";
 
 type Bounds = { left: number; top: number; width: number; height: number; viewportWidth: number; viewportHeight: number };
@@ -25,7 +26,7 @@ function Interpretation() {
 
 type DayExperienceProps = { calendar: CalendarDate; controls: ReactNode };
 
-function AnimatedDayExperience({ calendar, controls }: DayExperienceProps) {
+function AnimatedDayExperience({ calendar, controls, onImageContrastChange }: DayExperienceProps & { onImageContrastChange: (coverTop: number | null) => void }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<HTMLDivElement>(null);
   const slotRef = useRef<HTMLDivElement>(null);
@@ -49,7 +50,7 @@ function AnimatedDayExperience({ calendar, controls }: DayExperienceProps) {
     setPhase(nextPhase);
     // Change contrast when the moving white surface reaches the fixed header.
     const panelTop = (1 - Math.max(0, Math.min(1, (progress - 0.6) / 0.4))) * bounds.viewportHeight;
-    document.documentElement.dataset.dayScene = progress >= 0.4 && panelTop > 35 ? "image" : "light";
+    onImageContrastChange(progress >= 0.4 ? panelTop : null);
   });
 
   useLayoutEffect(() => {
@@ -73,7 +74,6 @@ function AnimatedDayExperience({ calendar, controls }: DayExperienceProps) {
       active = false;
       observer.disconnect();
       window.removeEventListener("resize", measure);
-      delete document.documentElement.dataset.dayScene;
     };
   }, []);
 
@@ -102,19 +102,56 @@ function AnimatedDayExperience({ calendar, controls }: DayExperienceProps) {
 
 export function DayScrollExperience({ calendar, controls }: DayExperienceProps) {
   const reducedMotion = useReducedMotion();
-  if (reducedMotion) {
-    return (
-      <div className="day-experience--reduced">
-        <section className="calendar-screen site-grid">{controls}<DaySignSection sign={calendar.tonalpohualli} /></section>
-        <section className="day-hero site-grid" aria-label="Day image">
-          <DaySignArtwork sign={calendar.tonalpohualli} className="day-hero__image" imageClassName="day-sign__art-image" />
-          <div className="day-hero__scrim" />
-          <h2 className="day-hero__title">{calendar.tonalpohualli.number} {calendar.tonalpohualli.sign}</h2>
-        </section>
-        <Interpretation />
-      </div>
-    );
-  }
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const imageCoverTop = useRef<number | null>(null);
+  const updateContrast = useCallback(() => {
+    const header = document.querySelector("header")?.getBoundingClientRect();
+    const headerY = header ? header.top + header.height / 2 : 35;
+    const surfaces = experienceRef.current?.querySelectorAll<HTMLElement>('[data-header-surface="image"]');
+    const surfaceAtHeader = Array.from(surfaces ?? []).some((surface) => {
+      const bounds = surface.getBoundingClientRect();
+      return bounds.top <= headerY && bounds.bottom > headerY;
+    });
+    const expandedImageAtHeader = imageCoverTop.current !== null && imageCoverTop.current > headerY;
+    document.documentElement.dataset.dayScene = surfaceAtHeader || expandedImageAtHeader ? "image" : "light";
+  }, []);
+  const onImageContrastChange = useCallback((coverTop: number | null) => {
+    imageCoverTop.current = coverTop;
+    updateContrast();
+  }, [updateContrast]);
 
-  return <AnimatedDayExperience calendar={calendar} controls={controls} />;
+  useLayoutEffect(() => {
+    let frame = 0;
+    function scheduleUpdate() {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(updateContrast);
+    }
+    imageCoverTop.current = null;
+    updateContrast();
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+      delete document.documentElement.dataset.dayScene;
+    };
+  }, [reducedMotion, updateContrast]);
+
+  return (
+    <div ref={experienceRef}>
+      {reducedMotion ? (
+        <div className="day-experience--reduced">
+          <section className="calendar-screen site-grid">{controls}<DaySignSection sign={calendar.tonalpohualli} /></section>
+          <section className="day-hero site-grid" aria-label="Day image" data-header-surface="image">
+            <DaySignArtwork sign={calendar.tonalpohualli} className="day-hero__image" imageClassName="day-sign__art-image" />
+            <div className="day-hero__scrim" />
+            <h2 className="day-hero__title">{calendar.tonalpohualli.number} {calendar.tonalpohualli.sign}</h2>
+          </section>
+          <Interpretation />
+        </div>
+      ) : <AnimatedDayExperience calendar={calendar} controls={controls} onImageContrastChange={onImageContrastChange} />}
+      <SignStorySection sign={calendar.day_sign} />
+    </div>
+  );
 }
