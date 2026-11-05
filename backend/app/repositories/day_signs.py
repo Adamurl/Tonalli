@@ -10,16 +10,11 @@ from supabase import Client, create_client
 load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 
 TABLE = "day_signs"
-BASE_COLUMNS = "name,english,position"
+BASE_COLUMNS = "name,english,position,description"
 DETAIL_FIELDS = (
-    "quick_reference",
-    "literal_meaning_and_glyph",
-    "core_meanings_and_symbolism",
-    "cultural_and_historical_context",
-    "day_sign_deity_association",
-    "app_safe_description",
-    "editorial_cautions",
-    "sources",
+    "meaning_and_glyph",
+    "symbolism",
+    "cultural_context",
 )
 DETAIL_COLUMNS = f"{BASE_COLUMNS},{','.join(DETAIL_FIELDS)}"
 

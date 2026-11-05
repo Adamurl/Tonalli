@@ -7,7 +7,12 @@ export function makeCalendarDate(
     date: "2026-03-29",
     correlation: "test-correlation",
     tonalpohualli: { number: 1, sign: "Cipactli", english: "Crocodile" },
-    day_sign: { name: "Cipactli", english: "Crocodile", position: 1 },
+    day_sign: {
+      name: "Cipactli",
+      english: "Crocodile",
+      position: 1,
+      description: "Cipactli evokes the living earth emerging from primordial waters. As the first day sign, it connects beginnings with the ground that sustains life, growth, and nourishment.",
+    },
     trecena: { number: 1, sign: "Cipactli", english: "Crocodile" },
     xiuhpohualli: {
       veintena: "Atlacahualo",

@@ -4,11 +4,24 @@ export type TonalpohualliDate = {
   english: string;
 };
 
+export type DaySignSummary = {
+  name: string;
+  english: string;
+  position: number;
+  description: string | null;
+};
+
+export type DaySignDetail = DaySignSummary & {
+  meaning_and_glyph: string | null;
+  symbolism: string | null;
+  cultural_context: string | null;
+};
+
 export type CalendarDate = {
   date: string;
   correlation: string;
   tonalpohualli: TonalpohualliDate;
-  day_sign: { name: string; english: string; position: number };
+  day_sign: DaySignSummary;
   trecena: { number: number; sign: string; english: string };
   xiuhpohualli: {
     veintena: string;

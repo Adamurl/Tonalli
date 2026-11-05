@@ -9,14 +9,10 @@ class DaySignSummary(BaseModel):
     name: str
     english: str
     position: int
+    description: str | None = None
 
 
 class DaySignDetail(DaySignSummary):
-    quick_reference: str | None = None
-    literal_meaning_and_glyph: str | None = None
-    core_meanings_and_symbolism: str | None = None
-    cultural_and_historical_context: str | None = None
-    day_sign_deity_association: str | None = None
-    app_safe_description: str | None = None
-    editorial_cautions: str | None = None
-    sources: str | None = None
+    meaning_and_glyph: str | None = None
+    symbolism: str | None = None
+    cultural_context: str | None = None
