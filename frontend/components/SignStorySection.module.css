@@ -1,32 +1,42 @@
 .section {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
   min-height: 100svh;
-  padding: clamp(7.5rem, 10.4vw, 11rem) 2.85% 5rem 41.65%;
-  background: #ff2d33;
-  color: #ff9699;
+  padding: clamp(7.5rem, 10.4vw, 11rem) 2.85% 5rem 60%;
+  background: var(--sign-background, #ff2d33);
+  color: var(--sign-text, #ff9699);
 }
 
 .artwork {
   position: absolute;
   z-index: -1;
   inset: 0 auto 0 0;
-  width: 59%;
+  width: 50%;
   pointer-events: none;
-  background-position: left bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
+  opacity: 0.18;
+}
+
+.artworkImage {
+  object-fit: cover;
+  object-position: left bottom;
+  filter: brightness(0);
+}
+
+[data-artwork-tone="light"] .artworkImage {
+  filter: brightness(0) invert(1);
 }
 
 .content {
   min-width: 0;
-  font-size: clamp(0.875rem, 1.02vw, 1.125rem);
+  font-size: clamp(0.6125rem, 0.735vw, 0.7875rem);
+  font-weight: 600;
   line-height: 1.43;
 }
 
 .content h2 {
   margin: 0 0 1rem;
-  font-size: clamp(2.5rem, 5.15vw, 6.5rem);
+  font-size: clamp(1.4rem, 3.71vw, 4.55rem);
   font-weight: 900;
   letter-spacing: -0.075em;
   line-height: 0.9;
@@ -37,6 +47,10 @@
   margin: 1.5rem 0 0;
 }
 
+.content > p + p {
+  margin-top: 0.9em;
+}
+
 .disclosure {
   margin-top: 1.25rem;
 }
@@ -44,6 +58,7 @@
 .disclosure summary {
   width: fit-content;
   list-style: none;
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.12em;
   cursor: pointer;
@@ -64,16 +79,15 @@
 
 @media (max-width: 760px) {
   .section {
-    padding: 7.5rem 1.5rem 40svh;
+    padding: 7.5rem 1.5rem calc(55svh + 2rem);
   }
 
   .content h2 {
-    font-size: clamp(2.35rem, 8.5vw, 4rem);
+    font-size: clamp(1.4rem, 3.71vw, 4.55rem);
   }
 
   .artwork {
-    inset: auto 0 0;
-    width: 100%;
-    height: 55svh;
+    inset: 0 auto 0 0;
+    width: 50%;
   }
 }

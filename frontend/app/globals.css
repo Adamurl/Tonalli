@@ -142,7 +142,7 @@ button, input { font: inherit; }
 }
 .day-sign__art-image { object-fit: cover; }
 .day-sign__translations {
-  font-size: 0.8rem;
+  font-size: 0.56rem;
   line-height: 1.2;
 }
 .day-sign__translations p { margin: 0; }
@@ -189,8 +189,8 @@ button, input { font: inherit; }
 .interpretation-cover { position: absolute; z-index: 3; inset: 0; }
 .interpretation { height: 100svh; background: #fff; color: var(--color-ink); align-items: center; }
 .interpretation__content { grid-column: 1 / -1; padding: 0; row-gap: 1.5rem; text-align: center; }
-.interpretation h2 { grid-column: 1 / -1; margin: 0; font-size: clamp(2rem, 5.3vw, 6.5rem); font-weight: 900; letter-spacing: -0.075em; line-height: 1; text-transform: uppercase; }
-.interpretation__copy { grid-column: 2 / 5; font-size: clamp(0.875rem, 1.05vw, 1.125rem); line-height: 1.45; }
+.interpretation h2 { grid-column: 1 / -1; margin: 0; font-size: clamp(1.4rem, 3.71vw, 4.55rem); font-weight: 900; letter-spacing: -0.075em; line-height: 1; text-transform: uppercase; }
+.interpretation__copy { grid-column: 2 / 5; font-size: clamp(0.6125rem, 0.735vw, 0.7875rem); line-height: 1.45; }
 .interpretation__copy p { margin: 0; }
 .interpretation__copy p + p { margin-top: 1.5em; }
 .day-experience--reduced .day-hero { position: relative; overflow: hidden; }

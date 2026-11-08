@@ -6,11 +6,35 @@ import { SignStorySection } from "../../components/SignStorySection";
 import { makeCalendarDate } from "../fixtures/calendar";
 
 describe("SignStorySection", () => {
+  it.each([
+    ["Cipactli", "Crocodile"], ["Ehecatl", "Wind"], ["Calli", "House"],
+    ["Cuetzpalin", "Iguana"], ["Coatl", "Snake"], ["Miquiztli", "Death"],
+    ["Mazatl", "Deer"], ["Tochtli", "Rabbit"], ["Atl", "Water"],
+    ["Itzcuintli", "Dog"], ["Malinalli", "Grass"], ["Acatl", "Reed"],
+    ["Ocelotl", "Jaguar"], ["Cuauhtli", "Eagle"], ["Cozcacuauhtli", "Vulture"], ["Ozomahtli", "Monkey"],
+    ["Ollin", "Movement"], ["Tecpatl", "Flint"], ["Quiahuitl", "Rain"], ["Xochitl", "Flower"],
+  ])("shows the decorative %s artwork", (name, filename) => {
+    const { container } = render(<SignStorySection sign={{ ...makeCalendarDate().day_sign, name }} />);
+    const artwork = container.querySelector("img");
+    expect(artwork).toHaveAttribute("src", expect.stringContaining(`${filename}.png`));
+    expect(artwork).toHaveAttribute("alt", "");
+    expect(artwork?.parentElement).toHaveAttribute("aria-hidden", "true");
+  });
+
+  it("clears the previous artwork when switching to a sign without a PNG", () => {
+    const sign = makeCalendarDate().day_sign;
+    const { container, rerender } = render(<SignStorySection sign={sign} />);
+    expect(container.querySelector("img")).toBeInTheDocument();
+    rerender(<SignStorySection sign={{ ...sign, name: "MissingSign", english: "Unknown" }} />);
+    expect(container.querySelector("img")).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /The meaning behind MissingSign/i })).toBeVisible();
+  });
+
   it("preserves the reference heading and shows the selected sign description", () => {
     const sign = makeCalendarDate().day_sign;
     const { container } = render(<SignStorySection sign={{ ...sign, description: `  ${sign.description}  ` }} />);
-    expect(screen.getByRole("heading", { name: /The meaning behind.*the sign/i })).toBeInTheDocument();
-    expect(screen.getByText(sign.description!)).toBeVisible();
+    expect(screen.getByRole("heading", { name: /The meaning behind Cipactli/i })).toBeInTheDocument();
+    expect(container.querySelector("section > div:last-child > p")?.textContent).toContain("Cipactli evokes the living earth");
     expect(container).not.toHaveTextContent("Itzcuintli");
     expect(container).not.toHaveTextContent("Mictlantecuhtli");
   });

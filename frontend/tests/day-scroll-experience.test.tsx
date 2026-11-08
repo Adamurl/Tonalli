@@ -83,7 +83,7 @@ describe("scroll-driven day experience", () => {
     expect(screen.getByText(description)).toBeInTheDocument();
     expect(screen.queryByText(makeCalendarDate().day_sign.description!)).not.toBeInTheDocument();
     const interpretation = container.querySelector(".interpretation")!;
-    const story = screen.getByRole("region", { name: /The meaning behind.*the sign/i });
+    const story = screen.getByRole("region", { name: /The meaning behind Ehecatl/i });
     expect(container.querySelectorAll(".interpretation__copy p")).toHaveLength(2);
     expect(interpretation).toHaveTextContent("Lorem ipsum");
     expect(interpretation).toHaveTextContent("Duis aute irure");
@@ -99,7 +99,7 @@ describe("scroll-driven day experience", () => {
     preferences.reduced = reduced;
     const { container } = render(<DayScrollExperience calendar={makeCalendarDate()} controls={null} />);
     const interpretation = container.querySelector(".interpretation");
-    const story = screen.getByRole("region", { name: /The meaning behind.*the sign/i });
+    const story = screen.getByRole("region", { name: /The meaning behind Cipactli/i });
     expect(interpretation?.compareDocumentPosition(story)).toBe(Node.DOCUMENT_POSITION_FOLLOWING);
     expect(story.closest(".day-scroll-track")).toBeNull();
     expect(story.closest(".interpretation")).toBeNull();
@@ -150,7 +150,7 @@ describe("scroll-driven day experience", () => {
     render(<DayScrollExperience calendar={makeCalendarDate({
       day_sign: { ...makeCalendarDate().day_sign, description: description },
     })} controls={null} />);
-    const story = screen.getByRole("region", { name: /The meaning behind.*the sign/i });
+    const story = screen.getByRole("region", { name: /The meaning behind Cipactli/i });
     expect(within(story).getByText("A description of this day sign is not available yet.")).toBeInTheDocument();
   });
 });
